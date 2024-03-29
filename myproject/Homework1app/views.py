@@ -5,10 +5,10 @@ from django.shortcuts import render
 logger = logging.getLogger(__name__)
 
 index_hw1 = """
-    Это главная страница.
+    <h1>Это главная страница.</h1>
 """
 about_hw1 = """
-    Это страница обо мне.
+    <h1>Это страница обо мне.</h1>
 """
 
 
