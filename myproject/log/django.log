@@ -1,0 +1,100 @@
+Watching for file changes with StatReloader
+"GET /main HTTP/1.1" 200 4
+E:\Python\Django\myproject\Homework1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Python\Django\myproject\Homework1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Python\Django\myproject\Homework1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2392
+Not Found: /
+"GET / HTTP/1.1" 404 2392
+Main page accessed
+"GET /main HTTP/1.1" 200 4
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "E:\Python\Django\myproject\Homework1app\views.py", line 17, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /about HTTP/1.1" 200 27
+Main page accessed
+"GET /main HTTP/1.1" 200 4
+E:\Python\Django\myproject\Homework1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Python\Django\myproject\Homework1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\Python\Django\myproject\Homework1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2392
+Main page accessed
+"GET /main HTTP/1.1" 200 4
+About page accessed
+"GET /about HTTP/1.1" 200 22
+Not Found: /
+"GET / HTTP/1.1" 404 2392
+E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-03-29 14:55:41,823 autoreload 17200 25916 Watching for file changes with StatReloader
+WARNING 2024-03-29 14:56:02,027 log 17200 26640 Not Found: /
+WARNING 2024-03-29 14:56:02,028 basehttp 17200 26640 "GET / HTTP/1.1" 404 2392
+INFO 2024-03-29 14:56:03,869 views 17200 26640 Main page accessed
+INFO 2024-03-29 14:56:03,869 basehttp 17200 26640 "GET /main HTTP/1.1" 200 4
+WARNING 2024-03-29 14:56:07,921 log 17200 26640 Not Found: /
+WARNING 2024-03-29 14:56:07,921 basehttp 17200 26640 "GET / HTTP/1.1" 404 2392
+DEBUG 2024-03-29 14:56:09,364 views 17200 26640 About page accessed
+INFO 2024-03-29 14:56:09,364 basehttp 17200 26640 "GET /about HTTP/1.1" 200 22
+WARNING 2024-03-29 14:56:13,128 log 17200 26640 Not Found: /
+WARNING 2024-03-29 14:56:13,129 basehttp 17200 26640 "GET / HTTP/1.1" 404 2392
+WARNING 2024-03-29 14:56:13,991 log 17200 26640 Not Found: /
+WARNING 2024-03-29 14:56:13,991 basehttp 17200 26640 "GET / HTTP/1.1" 404 2392
+INFO 2024-03-29 16:49:33,892 autoreload 12416 9252 Watching for file changes with StatReloader
+WARNING 2024-03-29 16:49:45,673 log 12416 17592 Not Found: /
+WARNING 2024-03-29 16:49:45,673 basehttp 12416 17592 "GET / HTTP/1.1" 404 2392
+INFO 2024-03-29 16:49:50,290 views 12416 17592 Main page accessed
+ERROR 2024-03-29 16:49:50,345 log 12416 17592 Internal Server Error: /main
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework1app\views.py", line 12, in main
+    return render(template_name='index')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() missing 1 required positional argument: 'request'
+ERROR 2024-03-29 16:49:50,346 basehttp 12416 17592 "GET /main HTTP/1.1" 500 66679
+INFO 2024-03-29 16:49:51,494 views 12416 17592 Main page accessed
+ERROR 2024-03-29 16:49:51,509 log 12416 17592 Internal Server Error: /main
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework1app\views.py", line 12, in main
+    return render(template_name='index')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() missing 1 required positional argument: 'request'
+ERROR 2024-03-29 16:49:51,511 basehttp 12416 17592 "GET /main HTTP/1.1" 500 66405
+INFO 2024-03-29 17:02:04,945 autoreload 19400 23792 Watching for file changes with StatReloader
+WARNING 2024-03-29 17:02:10,454 log 19400 27212 Not Found: /
+WARNING 2024-03-29 17:02:10,455 basehttp 19400 27212 "GET / HTTP/1.1" 404 2392
+WARNING 2024-03-29 17:02:11,518 log 19400 27212 Not Found: /
+WARNING 2024-03-29 17:02:11,519 basehttp 19400 27212 "GET / HTTP/1.1" 404 2392
+INFO 2024-03-29 17:02:17,384 views 19400 27212 Main page accessed
+INFO 2024-03-29 17:02:17,385 basehttp 19400 27212 "GET /main HTTP/1.1" 200 45
+WARNING 2024-03-29 17:02:25,862 log 19400 27212 Not Found: /
+WARNING 2024-03-29 17:02:25,863 basehttp 19400 27212 "GET / HTTP/1.1" 404 2392
+DEBUG 2024-03-29 17:02:27,826 views 19400 27212 About page accessed
+INFO 2024-03-29 17:02:27,826 basehttp 19400 27212 "GET /about HTTP/1.1" 200 44
+WARNING 2024-03-29 17:02:32,349 log 19400 27212 Not Found: /
+WARNING 2024-03-29 17:02:32,350 basehttp 19400 27212 "GET / HTTP/1.1" 404 2392
