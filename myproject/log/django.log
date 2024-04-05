@@ -113,3 +113,244 @@ WARNING 2024-03-29 17:06:47,436 log 1596 13516 Not Found: /
 WARNING 2024-03-29 17:06:47,436 basehttp 1596 13516 "GET / HTTP/1.1" 404 2392
 WARNING 2024-03-29 17:06:47,635 log 1596 13516 Not Found: /
 WARNING 2024-03-29 17:06:47,636 basehttp 1596 13516 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-02 10:39:31,388 autoreload 27528 1976 Watching for file changes with StatReloader
+INFO 2024-04-02 10:44:14,809 autoreload 27528 1976 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 10:44:15,246 autoreload 19956 9424 Watching for file changes with StatReloader
+INFO 2024-04-02 10:44:22,587 autoreload 22416 1912 Watching for file changes with StatReloader
+INFO 2024-04-02 10:45:21,568 autoreload 22416 1912 E:\Python\Django\myproject\Homework2app\urls.py changed, reloading.
+INFO 2024-04-02 10:45:21,989 autoreload 26236 9936 Watching for file changes with StatReloader
+INFO 2024-04-02 10:45:24,424 autoreload 21056 23080 Watching for file changes with StatReloader
+INFO 2024-04-02 10:47:28,328 autoreload 21056 23080 E:\Python\Django\myproject\Homework2app\views.py changed, reloading.
+INFO 2024-04-02 10:47:28,759 autoreload 19440 11580 Watching for file changes with StatReloader
+WARNING 2024-04-02 10:47:33,892 log 19440 27516 Not Found: /
+WARNING 2024-04-02 10:47:33,893 basehttp 19440 27516 "GET / HTTP/1.1" 404 2226
+WARNING 2024-04-02 10:47:34,014 log 19440 27516 Not Found: /favicon.ico
+WARNING 2024-04-02 10:47:34,015 basehttp 19440 27516 "GET /favicon.ico HTTP/1.1" 404 2277
+INFO 2024-04-02 10:47:41,037 basehttp 19440 27516 "GET /main HTTP/1.1" 200 4
+INFO 2024-04-02 10:55:52,388 autoreload 7832 19372 Watching for file changes with StatReloader
+INFO 2024-04-02 11:12:10,968 autoreload 24624 26992 Watching for file changes with StatReloader
+INFO 2024-04-02 11:12:15,083 basehttp 24624 25532 "GET /main HTTP/1.1" 200 4
+WARNING 2024-04-02 11:12:19,369 log 24624 25532 Not Found: /
+WARNING 2024-04-02 11:12:19,370 basehttp 24624 25532 "GET / HTTP/1.1" 404 2226
+WARNING 2024-04-02 11:12:21,723 log 24624 25532 Not Found: /user
+WARNING 2024-04-02 11:12:21,723 basehttp 24624 25532 "GET /user HTTP/1.1" 404 2256
+WARNING 2024-04-02 11:12:21,986 log 24624 25532 Not Found: /user
+WARNING 2024-04-02 11:12:21,986 basehttp 24624 25532 "GET /user HTTP/1.1" 404 2256
+INFO 2024-04-02 11:12:30,962 basehttp 24624 25532 "GET /main HTTP/1.1" 200 4
+INFO 2024-04-02 11:25:35,170 autoreload 15680 5324 Watching for file changes with StatReloader
+INFO 2024-04-02 11:29:48,865 autoreload 10388 9416 Watching for file changes with StatReloader
+INFO 2024-04-02 11:35:57,889 basehttp 10388 20204 "GET /main HTTP/1.1" 200 4
+INFO 2024-04-02 12:17:03,066 basehttp 10388 16264 "GET /main HTTP/1.1" 200 4
+INFO 2024-04-02 12:17:04,235 basehttp 10388 16264 "GET /main HTTP/1.1" 200 4
+INFO 2024-04-02 12:17:04,900 basehttp 10388 16264 "GET /main HTTP/1.1" 200 4
+WARNING 2024-04-02 12:17:07,639 log 10388 16264 Not Found: /
+WARNING 2024-04-02 12:17:07,640 basehttp 10388 16264 "GET / HTTP/1.1" 404 2226
+WARNING 2024-04-02 12:17:08,023 log 10388 16264 Not Found: /
+WARNING 2024-04-02 12:17:08,023 basehttp 10388 16264 "GET / HTTP/1.1" 404 2226
+INFO 2024-04-02 12:17:10,797 basehttp 10388 16264 "GET /main HTTP/1.1" 200 4
+INFO 2024-04-02 12:20:27,945 autoreload 10388 9416 E:\Python\Django\myproject\Homework2app\views.py changed, reloading.
+INFO 2024-04-02 12:20:28,386 autoreload 13568 15892 Watching for file changes with StatReloader
+INFO 2024-04-02 12:24:20,883 autoreload 13568 15892 E:\Python\Django\myproject\Homework2app\urls.py changed, reloading.
+INFO 2024-04-02 12:24:21,320 autoreload 25156 26772 Watching for file changes with StatReloader
+INFO 2024-04-02 12:27:31,251 autoreload 25156 26772 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-02 12:27:31,692 autoreload 9980 8340 Watching for file changes with StatReloader
+INFO 2024-04-02 12:28:33,368 autoreload 20036 16576 Watching for file changes with StatReloader
+INFO 2024-04-02 12:29:17,136 autoreload 20036 16576 E:\Python\Django\myproject\Homework2app\urls.py changed, reloading.
+INFO 2024-04-02 12:29:17,583 autoreload 1828 9220 Watching for file changes with StatReloader
+WARNING 2024-04-02 12:29:19,919 log 1828 11412 Not Found: /
+WARNING 2024-04-02 12:29:19,920 basehttp 1828 11412 "GET / HTTP/1.1" 404 2556
+WARNING 2024-04-02 12:30:10,444 log 1828 11412 Not Found: /
+WARNING 2024-04-02 12:30:10,444 basehttp 1828 11412 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-02 12:30:13,052 views 1828 11412 Main page accessed
+INFO 2024-04-02 12:30:13,052 basehttp 1828 11412 "GET /main HTTP/1.1" 200 54
+WARNING 2024-04-02 12:30:26,336 log 1828 11412 Not Found: /create_user
+WARNING 2024-04-02 12:30:26,336 basehttp 1828 11412 "GET /create_user HTTP/1.1" 404 2607
+INFO 2024-04-02 12:31:07,779 autoreload 1828 9220 E:\Python\Django\myproject\Homework2app\urls.py changed, reloading.
+INFO 2024-04-02 12:31:08,226 autoreload 18540 23752 Watching for file changes with StatReloader
+INFO 2024-04-02 12:31:13,200 basehttp 18540 15656 "GET /user HTTP/1.1" 200 4
+WARNING 2024-04-02 12:31:17,095 log 18540 15656 Not Found: /
+WARNING 2024-04-02 12:31:17,095 basehttp 18540 15656 "GET / HTTP/1.1" 404 2556
+WARNING 2024-04-02 12:31:17,287 log 18540 15656 Not Found: /
+WARNING 2024-04-02 12:31:17,287 basehttp 18540 15656 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-02 12:38:26,926 autoreload 18540 23752 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 12:38:27,377 autoreload 19852 9136 Watching for file changes with StatReloader
+INFO 2024-04-02 12:49:01,963 autoreload 19852 9136 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 12:49:02,399 autoreload 22136 12104 Watching for file changes with StatReloader
+WARNING 2024-04-02 13:04:08,072 log 22136 13268 Not Found: /
+WARNING 2024-04-02 13:04:08,072 basehttp 22136 13268 "GET / HTTP/1.1" 404 2556
+WARNING 2024-04-02 13:04:08,856 log 22136 13268 Not Found: /
+WARNING 2024-04-02 13:04:08,856 basehttp 22136 13268 "GET / HTTP/1.1" 404 2556
+WARNING 2024-04-02 13:04:11,003 log 22136 13268 Not Found: /
+WARNING 2024-04-02 13:04:11,003 basehttp 22136 13268 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-02 14:00:48,783 autoreload 22136 12104 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 14:00:49,242 autoreload 12864 22876 Watching for file changes with StatReloader
+INFO 2024-04-02 14:04:01,700 autoreload 12864 22876 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 14:04:02,152 autoreload 6252 1268 Watching for file changes with StatReloader
+WARNING 2024-04-02 14:04:03,090 log 6252 16576 Not Found: /
+WARNING 2024-04-02 14:04:03,091 basehttp 6252 16576 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-02 14:04:26,825 autoreload 6252 1268 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 14:04:27,276 autoreload 17020 23296 Watching for file changes with StatReloader
+INFO 2024-04-02 14:27:52,586 autoreload 17020 23296 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 14:27:53,061 autoreload 26696 22348 Watching for file changes with StatReloader
+WARNING 2024-04-02 17:47:54,932 log 26696 23024 Not Found: /
+WARNING 2024-04-02 17:47:54,934 basehttp 26696 23024 "GET / HTTP/1.1" 404 2556
+WARNING 2024-04-02 17:47:57,014 log 26696 23024 Not Found: /
+WARNING 2024-04-02 17:47:57,014 basehttp 26696 23024 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-02 17:48:00,526 views 26696 23024 Main page accessed
+INFO 2024-04-02 17:48:00,527 basehttp 26696 23024 "GET /main HTTP/1.1" 200 54
+WARNING 2024-04-02 17:48:04,107 log 26696 23024 Not Found: /
+WARNING 2024-04-02 17:48:04,108 basehttp 26696 23024 "GET / HTTP/1.1" 404 2556
+WARNING 2024-04-02 17:48:04,448 log 26696 23024 Not Found: /
+WARNING 2024-04-02 17:48:04,448 basehttp 26696 23024 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-02 18:14:24,849 autoreload 26696 22348 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:14:25,311 autoreload 26564 21376 Watching for file changes with StatReloader
+INFO 2024-04-02 18:14:35,761 autoreload 26564 21376 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:14:36,208 autoreload 23096 15344 Watching for file changes with StatReloader
+INFO 2024-04-02 18:15:34,431 autoreload 23096 15344 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:15:34,881 autoreload 22800 21532 Watching for file changes with StatReloader
+INFO 2024-04-02 18:16:48,353 autoreload 22800 21532 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:16:48,784 autoreload 25060 18852 Watching for file changes with StatReloader
+INFO 2024-04-02 18:17:06,340 autoreload 25060 18852 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:17:06,771 autoreload 14364 17256 Watching for file changes with StatReloader
+INFO 2024-04-02 18:17:27,383 autoreload 14364 17256 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:17:27,818 autoreload 8768 11400 Watching for file changes with StatReloader
+INFO 2024-04-02 18:17:45,388 autoreload 8768 11400 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:17:45,819 autoreload 1956 9628 Watching for file changes with StatReloader
+INFO 2024-04-02 18:18:04,394 autoreload 1956 9628 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:18:04,833 autoreload 2932 19120 Watching for file changes with StatReloader
+INFO 2024-04-02 18:18:35,607 autoreload 2932 19120 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:18:36,053 autoreload 3808 22868 Watching for file changes with StatReloader
+INFO 2024-04-02 18:19:02,772 autoreload 3808 22868 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:19:03,216 autoreload 25216 19900 Watching for file changes with StatReloader
+INFO 2024-04-02 18:19:22,814 autoreload 25216 19900 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:19:23,266 autoreload 22768 19220 Watching for file changes with StatReloader
+INFO 2024-04-02 18:19:27,642 autoreload 22768 19220 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:19:28,084 autoreload 23840 22388 Watching for file changes with StatReloader
+INFO 2024-04-02 18:20:26,315 autoreload 23840 22388 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:20:26,763 autoreload 26536 3932 Watching for file changes with StatReloader
+INFO 2024-04-02 18:20:44,337 autoreload 26536 3932 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:20:44,774 autoreload 7980 9992 Watching for file changes with StatReloader
+INFO 2024-04-02 18:20:51,165 autoreload 7980 9992 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:20:51,607 autoreload 23284 12212 Watching for file changes with StatReloader
+INFO 2024-04-02 18:20:56,974 autoreload 23284 12212 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:20:57,418 autoreload 23604 17852 Watching for file changes with StatReloader
+INFO 2024-04-02 18:21:07,864 autoreload 23604 17852 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:21:08,310 autoreload 15508 25500 Watching for file changes with StatReloader
+INFO 2024-04-02 18:21:40,123 autoreload 15508 25500 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:21:40,567 autoreload 19804 20724 Watching for file changes with StatReloader
+INFO 2024-04-02 18:22:07,275 autoreload 19804 20724 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:22:07,722 autoreload 13064 6216 Watching for file changes with StatReloader
+INFO 2024-04-02 18:22:29,352 autoreload 13064 6216 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:22:29,790 autoreload 16692 16948 Watching for file changes with StatReloader
+INFO 2024-04-02 18:22:53,450 autoreload 16692 16948 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:22:53,904 autoreload 23060 23956 Watching for file changes with StatReloader
+INFO 2024-04-02 18:23:13,508 autoreload 23060 23956 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:23:13,944 autoreload 7864 4112 Watching for file changes with StatReloader
+INFO 2024-04-02 18:24:22,323 autoreload 7864 4112 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:24:22,763 autoreload 25512 24776 Watching for file changes with StatReloader
+INFO 2024-04-02 18:24:40,327 autoreload 25512 24776 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:24:40,768 autoreload 14792 23468 Watching for file changes with StatReloader
+INFO 2024-04-02 18:25:40,029 autoreload 14792 23468 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:25:40,472 autoreload 20916 26928 Watching for file changes with StatReloader
+INFO 2024-04-02 18:26:13,282 autoreload 20916 26928 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:26:13,734 autoreload 15628 5908 Watching for file changes with StatReloader
+INFO 2024-04-02 18:26:20,128 autoreload 15628 5908 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:26:20,570 autoreload 2212 25264 Watching for file changes with StatReloader
+INFO 2024-04-02 18:27:22,869 autoreload 2212 25264 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:27:23,300 autoreload 17704 13236 Watching for file changes with StatReloader
+INFO 2024-04-02 18:27:33,753 autoreload 17704 13236 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:27:34,194 autoreload 4516 19160 Watching for file changes with StatReloader
+INFO 2024-04-02 18:27:59,887 autoreload 4516 19160 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:28:00,342 autoreload 15696 21036 Watching for file changes with StatReloader
+INFO 2024-04-02 18:30:22,957 autoreload 15696 21036 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:30:23,388 autoreload 11920 19280 Watching for file changes with StatReloader
+INFO 2024-04-02 18:32:34,823 autoreload 11920 19280 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:32:35,253 autoreload 13176 17660 Watching for file changes with StatReloader
+INFO 2024-04-02 18:33:05,017 autoreload 13176 17660 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:33:05,456 autoreload 3220 8584 Watching for file changes with StatReloader
+INFO 2024-04-02 18:33:29,131 autoreload 3220 8584 E:\Python\Django\myproject\Homework2app\models.py changed, reloading.
+INFO 2024-04-02 18:33:29,572 autoreload 3036 22428 Watching for file changes with StatReloader
+WARNING 2024-04-02 20:10:06,713 log 3036 27536 Not Found: /
+WARNING 2024-04-02 20:10:06,715 basehttp 3036 27536 "GET / HTTP/1.1" 404 2556
+INFO 2024-04-05 13:57:14,079 autoreload 5380 23728 Watching for file changes with StatReloader
+INFO 2024-04-05 13:57:34,657 autoreload 5380 23728 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-05 13:57:35,099 autoreload 24864 18492 Watching for file changes with StatReloader
+INFO 2024-04-05 13:58:25,972 autoreload 24864 18492 E:\Python\Django\myproject\Homework3app\models.py changed, reloading.
+INFO 2024-04-05 13:58:26,418 autoreload 21308 27624 Watching for file changes with StatReloader
+WARNING 2024-04-05 13:58:29,577 log 21308 20324 Not Found: /
+WARNING 2024-04-05 13:58:29,577 basehttp 21308 20324 "GET / HTTP/1.1" 404 2720
+WARNING 2024-04-05 13:58:29,720 log 21308 20324 Not Found: /favicon.ico
+WARNING 2024-04-05 13:58:29,720 basehttp 21308 20324 "GET /favicon.ico HTTP/1.1" 404 2771
+INFO 2024-04-05 14:00:59,378 autoreload 21308 27624 E:\Python\Django\myproject\Homework3app\views.py changed, reloading.
+INFO 2024-04-05 14:00:59,823 autoreload 26268 25896 Watching for file changes with StatReloader
+INFO 2024-04-05 14:02:32,304 autoreload 26268 25896 E:\Python\Django\myproject\Homework3app\models.py changed, reloading.
+INFO 2024-04-05 14:02:32,735 autoreload 4824 9272 Watching for file changes with StatReloader
+INFO 2024-04-05 14:06:32,407 autoreload 4824 9272 E:\Python\Django\myproject\Homework3app\views.py changed, reloading.
+INFO 2024-04-05 14:06:32,854 autoreload 7188 24844 Watching for file changes with StatReloader
+INFO 2024-04-05 14:06:38,652 basehttp 7188 9896 "GET / HTTP/1.1" 200 22
+INFO 2024-04-05 14:07:17,996 autoreload 7188 24844 E:\Python\Django\myproject\Homework3app\views.py changed, reloading.
+INFO 2024-04-05 14:07:18,454 autoreload 7844 1636 Watching for file changes with StatReloader
+INFO 2024-04-05 14:07:19,126 basehttp 7844 21544 "GET / HTTP/1.1" 200 12
+WARNING 2024-04-05 14:07:37,762 log 7844 21544 Not Found: /order
+WARNING 2024-04-05 14:07:37,763 basehttp 7844 21544 "GET /order HTTP/1.1" 404 3159
+WARNING 2024-04-05 14:07:53,692 log 7844 21544 Not Found: /list_of_products
+WARNING 2024-04-05 14:07:53,692 basehttp 7844 21544 "GET /list_of_products HTTP/1.1" 404 3192
+ERROR 2024-04-05 14:08:11,688 log 7844 21544 Internal Server Error: /list_of_products/1/12
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: Homework3app_client
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework3app\views.py", line 18, in list_of_products
+    client = get_object_or_404(Client, pk=id_client)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: Homework3app_client
+ERROR 2024-04-05 14:08:11,693 basehttp 7844 21544 "GET /list_of_products/1/12 HTTP/1.1" 500 138421
