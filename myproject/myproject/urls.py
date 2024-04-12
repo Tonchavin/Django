@@ -17,13 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('myapp.urls')),
-    path('', include('Homework1app.urls')),
-    path('', include('Homework2app.urls')),
-    path('', include('Homework3app.urls')),
-    # path('', include('Homework4app.urls')),
-    # path('', include('Homework5app.urls')),
-    # path('', include('Homework6app.urls')),
+    path('prefix', include('myapp.urls')),
+    # path('HW1/', include('Homework1app.urls')),
+    # path('HW2/', include('Homework2app.urls')),
+    # path('HW3/', include('Homework3app.urls')),
+    path('HW4/', include('Homework4app.urls')),
+    # path('HW5/', include('Homework5app.urls')),
+    # path('HW6/', include('Homework6app.urls')),
 ]

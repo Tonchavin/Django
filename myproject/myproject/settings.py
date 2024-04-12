@@ -36,10 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 'myapp',
-    'Homework1app',
-    'Homework2app',
-    'Homework3app',
-    # 'Homework4app',
+    # 'Homework1app',
+    # 'Homework2app',
+    # 'Homework3app',
+    'Homework4app',
     # 'Homework5app',
     # 'Homework6app',
 ]
@@ -59,7 +59,9 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

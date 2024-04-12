@@ -1,40 +1,34 @@
 from django.db import models
-
+import datetime
 
 # Create your models here.
 
-class User(models.Model):
-    name = models.CharField(max_length=64)
+
+class Client(models.Model):
+    name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone = models.CharField(max_length=128)
-    address = models.CharField(max_length=240)
-    data_user = models.DateTimeField(auto_now_add=True)
+    phone_number = models.IntegerField()
+    adress = models.CharField(max_length=200)
+    registration_date = models.DateField()
 
     def __str__(self):
-        return (f'Username: {self.name}, email: {self.email}, phone: {self.phone}, address: {self.address}, '
-                f'create: {self.data_user}')
+        return f'Client_name: {self.name}, phone: {self.phone_number}, adress: {self.adress}'
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=64)
-    count = models.IntegerField()
+    name = models.CharField(max_length=100)
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    data_product = models.DateTimeField(auto_now_add=True)
-
-    image = models.ImageField(upload_to='products/')
+    value = models.IntegerField()
+    date_add = models.DateField()
+    data = models.FileField(upload_to='Homework4_', blank=True, null=True)
 
     def __str__(self):
-        return (f'Product: {self.name}, count: {self.count}, description: {self.description}, '
-                f'price: {self.price}, create: {self.data_product}')
+        return self.name
 
 
 class Order(models.Model):
-    customer = models.ForeignKey(User, on_delete=models.CASCADE)
+    customer = models.ForeignKey(Client, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product)
-    data_ordered = models.DateTimeField(auto_now_add=True)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
-
-    def __str__(self):
-        return (f'client: {self.customer}, products: {self.products.name}, '
-                f'price: {self.total_price}, create: {self.data_ordered}')
+    date_ordered = models.DateTimeField(auto_now_add=True)
