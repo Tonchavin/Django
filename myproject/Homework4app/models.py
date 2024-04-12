@@ -4,7 +4,7 @@ from django.db import models
 class Client(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone_number = models.CharField(max_length=12, default='89505555555')
+    phone_number = models.CharField(max_length=12, default='0000000000')
     address = models.CharField(max_length=150)
     date_of_registry = models.DateField(auto_now_add=True)
 
@@ -14,13 +14,14 @@ class Client(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=100)
-    description = models.CharField(max_length=100, default="New product")
+    description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    quantity = models.IntegerField(default=0)
-    date_added = models.DateField(auto_now_add=True)
+    value = models.IntegerField()
+    date_add = models.DateField()
+    data = models.FileField(upload_to='Homework4app', blank=True, null=True)
 
     def __str__(self):
-        return f'{self.name} {self.quantity} {self.price}'
+        return self.name
 
 
 class Order(models.Model):

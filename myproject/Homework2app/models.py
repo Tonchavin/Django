@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 
+
 # Create your models here.
 
 
@@ -21,7 +22,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     value = models.IntegerField()
     date_add = models.DateField()
-    data = models.FileField(upload_to='Homework4_', blank=True, null=True)
+    data = models.FileField(upload_to='Homework_4', blank=True, null=True)
 
     def __str__(self):
         return self.name

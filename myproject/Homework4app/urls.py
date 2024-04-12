@@ -1,9 +1,7 @@
 from django.urls import path
-from .views import index, list_of_products, upload_image, user_form
+from . import views
 
 urlpatterns = [
-    path('user/', user_form, name='user_form'),
-    path('', index, name='index'),
-    path('list_of_products/<int:id_client>/<int:period>', list_of_products, name='list_of_products'),
-    path('upload_image/', upload_image, name='upload_image'),
+    path('update/', views.update_product, name='update_product'),
+    path('user/', views.user_form, name='user_form'),
 ]

@@ -1,12 +1,9 @@
 import logging
-from datetime import datetime, timedelta
 
-from django.shortcuts import render, get_object_or_404
-from .forms import UserForm, ImageForm
-from django.core.files.storage import FileSystemStorage
+from django.shortcuts import render
+from .forms import UserForm, ProductForm
+from .models import Product
 from django.http import HttpResponse
-
-from .models import Client, Order
 
 # Create your views here.
 
@@ -17,36 +14,16 @@ def index(request):
     return HttpResponse('Online shop')
 
 
-def list_of_products(request, id_client, period):
-    lst = []
-    client = get_object_or_404(Client, pk=id_client)
-    end_date = datetime.now()
-    start_date = end_date - timedelta(days=period)
-    start_date_only = start_date.date()
-
-    if client is not None:
-        orders = Order.objects.filter(client=client)
-        for order in orders:
-            if order.order_date > start_date_only:
-                products = order.products.all()
-                for prod in products:
-                    lst.append(prod)
-    context = {'client': client.name,
-               'period': period,
-               'list_of_products': lst}
-    return render(request, 'Homework4app/list_of_products.html', context)
-
-
-def upload_image(request):
-    if request.method == 'POST':
-        form = ImageForm(request.POST, request.FILES)
-        if form.is_valid():
-            image = form.cleaned_data['image']
-            fs = FileSystemStorage()
-            fs.save(image.name, image)
-    else:
-        form = ImageForm()
-    return render(request, 'Homework4app/upload_image.html', {'form': form})
+# def upload_image(request):
+#     if request.method == 'POST':
+#         form = ImageForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             image = form.cleaned_data['image']
+#             fs = FileSystemStorage()
+#             fs.save(image.name, image)
+#     else:
+#         form = ImageForm()
+#     return render(request, 'Homework4app/upload_image.html', {'form': form})
 
 
 def user_form(request):
@@ -60,3 +37,35 @@ def user_form(request):
     else:
         form = UserForm()
     return render(request, 'Homework4app/user_form.html', {'form': form})
+
+
+# Create your views here.
+
+def update_product(request):
+    message = 'New info about product'
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            id_ = form.cleaned_data['id_']
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            value = form.cleaned_data['value']
+            date_add = form.cleaned_data['date_add']
+            image = form.cleaned_data['image']
+            product = Product.objects.filter(id=id_).first()
+            if product is not None:
+                if image is not None:
+                    product.data = image
+                product.name = name
+                product.description = description
+                product.price = price
+                product.value = value
+                product.date_add = date_add
+                product.save()
+                message = 'Successfully'
+            else:
+                message = f'Product Id={id_} not found'
+    else:
+        form = ProductForm()
+    return render(request, 'Homework4app/update_product.html', {'form': form, 'message': message})

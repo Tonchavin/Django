@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>Загрузите изображение</h2>
+<h2>Update Product</h2>
 
 {% if answer %}
 {{ answer }}
@@ -10,7 +10,7 @@
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Загрузить</button>
+    <button type="submit">load</button>
 </form>
 {% endif %}
 {% endblock %}
