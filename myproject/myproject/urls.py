@@ -23,8 +23,9 @@ urlpatterns = [
     path('prefix', include('myapp.urls')),
     # path('HW1/', include('Homework1app.urls')),
     # path('HW2/', include('Homework2app.urls')),
-    # path('HW3/', include('Homework3app.urls')),
+    path('HW3/', include('Homework3app.urls')),
     path('HW4/', include('Homework4app.urls')),
     path('HW5/', include('Homework5app.urls')),
-    # path('HW6/', include('Homework6app.urls')),
+    path('HW6/', include('Homework6app.urls')),
+    path('__debug__/', include("debug_toolbar.urls")),
 ]

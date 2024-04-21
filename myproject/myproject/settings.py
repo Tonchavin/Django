@@ -24,7 +24,14 @@ SECRET_KEY = 'django-insecure-3#jy-pfw=cqh7918xm&@!lm-+e^k@g9%eb_@^v8h%j8&l=968c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.50.180',
+    '127.0.0.1',
+]
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
 
 # Application definition
 
@@ -38,13 +45,15 @@ INSTALLED_APPS = [
     # 'myapp',
     # 'Homework1app',
     # 'Homework2app',
-    # 'Homework3app',
+    'Homework3app',
     'Homework4app',
     'Homework5app',
-    # 'Homework6app',
+    'Homework6app',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -119,6 +128,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

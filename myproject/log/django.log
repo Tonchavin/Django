@@ -354,3 +354,1756 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 django.db.utils.OperationalError: no such table: Homework3app_client
 ERROR 2024-04-05 14:08:11,693 basehttp 7844 21544 "GET /list_of_products/1/12 HTTP/1.1" 500 138421
+INFO 2024-04-05 14:18:33,592 autoreload 1592 5448 Watching for file changes with StatReloader
+INFO 2024-04-05 14:19:06,225 autoreload 1592 5448 E:\Python\Django\myproject\Homework4app\models.py changed, reloading.
+INFO 2024-04-05 14:19:06,678 autoreload 27212 18684 Watching for file changes with StatReloader
+INFO 2024-04-05 14:19:31,186 autoreload 27212 18684 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-05 14:19:31,641 autoreload 12192 22000 Watching for file changes with StatReloader
+INFO 2024-04-05 14:20:30,343 autoreload 24732 24292 Watching for file changes with StatReloader
+INFO 2024-04-05 14:20:36,578 basehttp 24732 22700 "GET / HTTP/1.1" 200 12
+WARNING 2024-04-05 14:20:43,706 log 24732 22700 Not Found: /image
+WARNING 2024-04-05 14:20:43,706 basehttp 24732 22700 "GET /image HTTP/1.1" 404 3159
+ERROR 2024-04-05 14:20:51,011 log 24732 22700 Internal Server Error: /upload_image
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework4app\views.py", line 45, in upload_image
+    return render(request, 'templates/upload_image.html', {'form': form, 'answer': 'Изображение добавлено!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/upload_image.html
+ERROR 2024-04-05 14:20:51,014 basehttp 24732 22700 "GET /upload_image HTTP/1.1" 500 81532
+INFO 2024-04-05 14:21:15,825 basehttp 24732 22700 "GET / HTTP/1.1" 200 12
+INFO 2024-04-05 14:21:17,928 basehttp 24732 22700 "GET / HTTP/1.1" 200 12
+WARNING 2024-04-05 14:21:24,311 log 24732 22700 Not Found: /base
+WARNING 2024-04-05 14:21:24,311 basehttp 24732 22700 "GET /base HTTP/1.1" 404 3156
+INFO 2024-04-12 09:11:16,632 autoreload 14364 2436 Watching for file changes with StatReloader
+INFO 2024-04-12 09:11:55,494 autoreload 14364 2436 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 09:11:55,933 autoreload 20776 9904 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:12:00,925 log 20776 21240 Not Found: /
+WARNING 2024-04-12 09:12:00,925 basehttp 20776 21240 "GET / HTTP/1.1" 404 2165
+WARNING 2024-04-12 09:12:01,063 log 20776 21240 Not Found: /favicon.ico
+WARNING 2024-04-12 09:12:01,064 basehttp 20776 21240 "GET /favicon.ico HTTP/1.1" 404 2216
+WARNING 2024-04-12 09:12:08,883 log 20776 21240 Not Found: /hw4
+WARNING 2024-04-12 09:12:08,884 basehttp 20776 21240 "GET /hw4 HTTP/1.1" 404 2192
+WARNING 2024-04-12 09:12:12,760 log 20776 21240 Not Found: /hw4
+WARNING 2024-04-12 09:12:12,761 basehttp 20776 21240 "GET /hw4 HTTP/1.1" 404 2192
+WARNING 2024-04-12 09:12:20,827 log 20776 21240 Not Found: /
+WARNING 2024-04-12 09:12:20,827 basehttp 20776 21240 "GET / HTTP/1.1" 404 2165
+INFO 2024-04-12 09:12:29,096 basehttp 20776 21240 "GET /HW4 HTTP/1.1" 200 12
+WARNING 2024-04-12 09:12:39,773 log 20776 21240 Not Found: /HW4/
+WARNING 2024-04-12 09:12:39,773 basehttp 20776 21240 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 09:12:49,707 log 20776 21240 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:12:49,708 basehttp 20776 21240 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 09:13:09,577 log 20776 21240 Not Found: /HW4 upload_image
+WARNING 2024-04-12 09:13:09,578 basehttp 20776 21240 "GET /HW4%20upload_image HTTP/1.1" 404 2709
+WARNING 2024-04-12 09:13:21,891 log 20776 21240 Not Found: /upload_image
+WARNING 2024-04-12 09:13:21,892 basehttp 20776 21240 "GET /upload_image HTTP/1.1" 404 2219
+INFO 2024-04-12 09:13:27,577 basehttp 20776 21240 "GET /HW4 HTTP/1.1" 200 12
+WARNING 2024-04-12 09:13:31,053 log 20776 21240 Not Found: /HW4/
+WARNING 2024-04-12 09:13:31,054 basehttp 20776 21240 "GET /HW4/ HTTP/1.1" 404 2671
+INFO 2024-04-12 09:13:57,255 autoreload 20776 9904 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 09:13:57,688 autoreload 6932 11228 Watching for file changes with StatReloader
+INFO 2024-04-12 09:14:00,404 basehttp 6932 20556 "GET / HTTP/1.1" 200 12
+INFO 2024-04-12 09:14:03,199 basehttp 6932 20556 "GET / HTTP/1.1" 200 12
+INFO 2024-04-12 09:14:06,048 basehttp 6932 20556 "GET / HTTP/1.1" 200 12
+ERROR 2024-04-12 09:14:08,765 log 6932 20556 Internal Server Error: /upload_image
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework4app\views.py", line 45, in upload_image
+    return render(request, 'templates/upload_image.html', {'form': form, 'answer': 'Изображение добавлено!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/upload_image.html
+ERROR 2024-04-12 09:14:08,768 basehttp 6932 20556 "GET /upload_image HTTP/1.1" 500 81822
+WARNING 2024-04-12 09:14:18,635 log 6932 20556 Not Found: /upload
+WARNING 2024-04-12 09:14:18,636 basehttp 6932 20556 "GET /upload HTTP/1.1" 404 2668
+ERROR 2024-04-12 09:14:36,200 log 6932 20556 Internal Server Error: /upload_image
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework4app\views.py", line 45, in upload_image
+    return render(request, 'templates/upload_image.html', {'form': form, 'answer': 'Изображение добавлено!'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/upload_image.html
+ERROR 2024-04-12 09:14:36,202 basehttp 6932 20556 "GET /upload_image HTTP/1.1" 500 81822
+WARNING 2024-04-12 09:14:45,314 log 6932 20556 Not Found: /upload/
+WARNING 2024-04-12 09:14:45,315 basehttp 6932 20556 "GET /upload/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 09:14:49,955 log 6932 20556 Not Found: /upload_image/
+WARNING 2024-04-12 09:14:49,955 basehttp 6932 20556 "GET /upload_image/ HTTP/1.1" 404 2689
+INFO 2024-04-12 09:15:28,682 autoreload 6932 11228 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 09:15:29,121 autoreload 8800 5076 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:15:32,163 log 8800 8232 Not Found: /upload_image/
+WARNING 2024-04-12 09:15:32,164 basehttp 8800 8232 "GET /upload_image/ HTTP/1.1" 404 2325
+WARNING 2024-04-12 09:15:38,611 log 8800 8232 Not Found: /HW4/
+WARNING 2024-04-12 09:15:38,611 basehttp 8800 8232 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:15:45,428 log 8800 8232 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:15:45,428 basehttp 8800 8232 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:16:04,124 log 8800 8232 Not Found: /HW4/list_of_products
+WARNING 2024-04-12 09:16:04,125 basehttp 8800 8232 "GET /HW4/list_of_products HTTP/1.1" 404 2822
+INFO 2024-04-12 09:18:14,263 autoreload 8800 5076 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 09:18:14,717 autoreload 9704 18508 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:18:28,199 log 9704 20728 Not Found: /HW4/list_of_products
+WARNING 2024-04-12 09:18:28,199 basehttp 9704 20728 "GET /HW4/list_of_products HTTP/1.1" 404 2822
+WARNING 2024-04-12 09:18:35,723 log 9704 20728 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:18:35,723 basehttp 9704 20728 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:19:03,186 log 9704 20728 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:19:03,186 basehttp 9704 20728 "GET /HW4/upload_image HTTP/1.1" 404 2810
+INFO 2024-04-12 09:19:07,552 basehttp 9704 20728 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:19:11,261 log 9704 20728 Not Found: /HW4/
+WARNING 2024-04-12 09:19:11,261 basehttp 9704 20728 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:19:19,443 log 9704 20728 Not Found: /HW4/index
+WARNING 2024-04-12 09:19:19,443 basehttp 9704 20728 "GET /HW4/index HTTP/1.1" 404 2789
+WARNING 2024-04-12 09:19:26,316 log 9704 20728 Not Found: /HW4/base
+WARNING 2024-04-12 09:19:26,317 basehttp 9704 20728 "GET /HW4/base HTTP/1.1" 404 2786
+WARNING 2024-04-12 09:19:29,205 log 9704 20728 Not Found: /HW4/
+WARNING 2024-04-12 09:19:29,206 basehttp 9704 20728 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:19:42,851 log 9704 20728 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:19:42,852 basehttp 9704 20728 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:20:04,028 log 9704 20728 Not Found: /HW4/upload_image.html
+WARNING 2024-04-12 09:20:04,028 basehttp 9704 20728 "GET /HW4/upload_image.html HTTP/1.1" 404 2825
+WARNING 2024-04-12 09:20:10,164 log 9704 20728 Not Found: /HW4/image
+WARNING 2024-04-12 09:20:10,165 basehttp 9704 20728 "GET /HW4/image HTTP/1.1" 404 2789
+WARNING 2024-04-12 09:20:15,356 log 9704 20728 Not Found: /HW4/forms
+WARNING 2024-04-12 09:20:15,356 basehttp 9704 20728 "GET /HW4/forms HTTP/1.1" 404 2789
+WARNING 2024-04-12 09:20:17,603 log 9704 20728 Not Found: /HW4/form
+WARNING 2024-04-12 09:20:17,603 basehttp 9704 20728 "GET /HW4/form HTTP/1.1" 404 2786
+INFO 2024-04-12 09:20:41,528 basehttp 9704 20728 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:20:43,829 log 9704 20728 Not Found: /HW4/
+WARNING 2024-04-12 09:20:43,829 basehttp 9704 20728 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:20:49,412 log 9704 20728 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:20:49,412 basehttp 9704 20728 "GET /HW4/upload_image HTTP/1.1" 404 2810
+INFO 2024-04-12 09:23:48,816 autoreload 9704 18508 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 09:23:49,241 autoreload 1804 22724 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:23:59,135 log 1804 13836 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:23:59,135 basehttp 1804 13836 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:24:02,468 log 1804 13836 Not Found: /HW4/
+WARNING 2024-04-12 09:24:02,468 basehttp 1804 13836 "GET /HW4/ HTTP/1.1" 404 2774
+INFO 2024-04-12 09:24:04,337 basehttp 1804 13836 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:24:07,630 log 1804 13836 Not Found: /HW4/
+WARNING 2024-04-12 09:24:07,630 basehttp 1804 13836 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:24:18,187 log 1804 13836 Not Found: /HW4/
+WARNING 2024-04-12 09:24:18,187 basehttp 1804 13836 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:24:22,596 log 1804 13836 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:24:22,596 basehttp 1804 13836 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:24:33,292 log 1804 13836 Not Found: /HW4/upload
+WARNING 2024-04-12 09:24:33,292 basehttp 1804 13836 "GET /HW4/upload HTTP/1.1" 404 2792
+WARNING 2024-04-12 09:24:36,804 log 1804 13836 Not Found: /HW4/image
+WARNING 2024-04-12 09:24:36,805 basehttp 1804 13836 "GET /HW4/image HTTP/1.1" 404 2789
+WARNING 2024-04-12 09:24:49,764 log 1804 13836 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:24:49,764 basehttp 1804 13836 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:24:58,140 log 1804 13836 Not Found: /HW4/upload_image/f
+WARNING 2024-04-12 09:24:58,140 basehttp 1804 13836 "GET /HW4/upload_image/f HTTP/1.1" 404 2816
+WARNING 2024-04-12 09:25:01,805 log 1804 13836 Not Found: /HW4/upload_image/
+WARNING 2024-04-12 09:25:01,805 basehttp 1804 13836 "GET /HW4/upload_image/ HTTP/1.1" 404 2813
+WARNING 2024-04-12 09:25:09,492 log 1804 13836 Not Found: /HW4/as/
+WARNING 2024-04-12 09:25:09,492 basehttp 1804 13836 "GET /HW4/as/ HTTP/1.1" 404 2783
+WARNING 2024-04-12 09:25:15,228 log 1804 13836 Not Found: /HW4/
+WARNING 2024-04-12 09:25:15,228 basehttp 1804 13836 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:26:59,114 log 1804 13836 Not Found: /HW4/
+WARNING 2024-04-12 09:26:59,115 basehttp 1804 13836 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:27:05,539 log 1804 13836 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:27:05,540 basehttp 1804 13836 "GET /HW4/upload_image HTTP/1.1" 404 2810
+INFO 2024-04-12 09:30:56,755 autoreload 1804 22724 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 09:30:57,186 autoreload 8000 12968 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:32:06,967 log 8000 18660 Not Found: /HW4/
+WARNING 2024-04-12 09:32:06,968 basehttp 8000 18660 "GET /HW4/ HTTP/1.1" 404 2774
+INFO 2024-04-12 09:32:11,273 basehttp 8000 18660 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:32:17,191 log 8000 18660 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:32:17,191 basehttp 8000 18660 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:32:20,307 log 8000 18660 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:32:20,307 basehttp 8000 18660 "GET /HW4/upload_image HTTP/1.1" 404 2810
+INFO 2024-04-12 09:32:37,488 basehttp 8000 18660 "GET /HW4 HTTP/1.1" 200 20
+INFO 2024-04-12 09:34:07,664 basehttp 8000 18660 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:34:10,845 log 8000 18660 Not Found: /HW4/
+WARNING 2024-04-12 09:34:10,846 basehttp 8000 18660 "GET /HW4/ HTTP/1.1" 404 2774
+WARNING 2024-04-12 09:34:15,244 log 8000 18660 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:34:15,244 basehttp 8000 18660 "GET /HW4/upload_image HTTP/1.1" 404 2810
+WARNING 2024-04-12 09:34:30,484 log 8000 18660 Not Found: /HW4/form
+WARNING 2024-04-12 09:34:30,485 basehttp 8000 18660 "GET /HW4/form HTTP/1.1" 404 2786
+WARNING 2024-04-12 09:34:39,844 log 8000 18660 Not Found: /HW4/index
+WARNING 2024-04-12 09:34:39,845 basehttp 8000 18660 "GET /HW4/index HTTP/1.1" 404 2789
+WARNING 2024-04-12 09:34:50,867 log 8000 18660 Not Found: /HW4/upload image
+WARNING 2024-04-12 09:34:50,868 basehttp 8000 18660 "GET /HW4/upload%20image HTTP/1.1" 404 2812
+WARNING 2024-04-12 09:35:06,004 log 8000 18660 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:35:06,004 basehttp 8000 18660 "GET /HW4/upload_image HTTP/1.1" 404 2810
+INFO 2024-04-12 09:43:57,714 autoreload 11876 22272 Watching for file changes with StatReloader
+INFO 2024-04-12 09:44:03,445 basehttp 11876 11904 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:44:06,243 log 11876 11904 Not Found: /HW4/
+WARNING 2024-04-12 09:44:06,243 basehttp 11876 11904 "GET /HW4/ HTTP/1.1" 404 2535
+WARNING 2024-04-12 09:44:13,372 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:44:13,373 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:44:16,204 log 11876 11904 Not Found: /HW4/image/
+WARNING 2024-04-12 09:44:16,204 basehttp 11876 11904 "GET /HW4/image/ HTTP/1.1" 404 2553
+WARNING 2024-04-12 09:44:25,716 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:44:25,716 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:44:36,940 log 11876 11904 Not Found: /HW4/image/
+WARNING 2024-04-12 09:44:36,941 basehttp 11876 11904 "GET /HW4/image/ HTTP/1.1" 404 2553
+WARNING 2024-04-12 09:45:38,387 log 11876 11904 Not Found: /HW4/image/
+WARNING 2024-04-12 09:45:38,387 basehttp 11876 11904 "GET /HW4/image/ HTTP/1.1" 404 2553
+WARNING 2024-04-12 09:45:40,572 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:45:40,572 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:45:44,196 log 11876 11904 Not Found: /HW4/
+WARNING 2024-04-12 09:45:44,196 basehttp 11876 11904 "GET /HW4/ HTTP/1.1" 404 2535
+WARNING 2024-04-12 09:45:54,484 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:45:54,484 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:46:01,773 log 11876 11904 Not Found: /HW4/image/
+WARNING 2024-04-12 09:46:01,773 basehttp 11876 11904 "GET /HW4/image/ HTTP/1.1" 404 2553
+WARNING 2024-04-12 09:46:05,196 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:46:05,196 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:46:08,508 log 11876 11904 Not Found: /HW4//
+WARNING 2024-04-12 09:46:08,508 basehttp 11876 11904 "GET /HW4// HTTP/1.1" 404 2538
+WARNING 2024-04-12 09:46:15,259 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:46:15,260 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:46:19,068 log 11876 11904 Not Found: /HW4/image/
+WARNING 2024-04-12 09:46:19,069 basehttp 11876 11904 "GET /HW4/image/ HTTP/1.1" 404 2553
+WARNING 2024-04-12 09:46:24,563 log 11876 11904 Not Found: /HW4/image/
+WARNING 2024-04-12 09:46:24,564 basehttp 11876 11904 "GET /HW4/image/ HTTP/1.1" 404 2553
+WARNING 2024-04-12 09:46:27,373 log 11876 11904 Not Found: /HW4/image
+WARNING 2024-04-12 09:46:27,374 basehttp 11876 11904 "GET /HW4/image HTTP/1.1" 404 2550
+WARNING 2024-04-12 09:46:30,404 log 11876 11904 Not Found: /HW4/
+WARNING 2024-04-12 09:46:30,405 basehttp 11876 11904 "GET /HW4/ HTTP/1.1" 404 2535
+INFO 2024-04-12 09:46:32,737 basehttp 11876 11904 "GET /HW4 HTTP/1.1" 200 20
+WARNING 2024-04-12 09:46:35,510 log 11876 11904 Not Found: /HW4/
+WARNING 2024-04-12 09:46:35,510 basehttp 11876 11904 "GET /HW4/ HTTP/1.1" 404 2535
+WARNING 2024-04-12 09:46:45,837 log 11876 11904 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:46:45,837 basehttp 11876 11904 "GET /HW4/upload_image HTTP/1.1" 404 2571
+INFO 2024-04-12 09:47:09,294 autoreload 11876 22272 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 09:47:09,744 autoreload 8052 6220 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:47:14,815 log 8052 18668 Not Found: /HW4/
+WARNING 2024-04-12 09:47:14,815 basehttp 8052 18668 "GET /HW4/ HTTP/1.1" 404 2536
+WARNING 2024-04-12 09:47:24,268 log 8052 18668 Not Found: /HW4/image/
+WARNING 2024-04-12 09:47:24,268 basehttp 8052 18668 "GET /HW4/image/ HTTP/1.1" 404 2554
+WARNING 2024-04-12 09:47:28,324 log 8052 18668 Not Found: /HW4/image/form
+WARNING 2024-04-12 09:47:28,325 basehttp 8052 18668 "GET /HW4/image/form HTTP/1.1" 404 2566
+WARNING 2024-04-12 09:47:31,213 log 8052 18668 Not Found: /HW4/image/forms
+WARNING 2024-04-12 09:47:31,213 basehttp 8052 18668 "GET /HW4/image/forms HTTP/1.1" 404 2569
+WARNING 2024-04-12 09:47:58,820 log 8052 18668 Not Found: /HW4/image/forms
+WARNING 2024-04-12 09:47:58,820 basehttp 8052 18668 "GET /HW4/image/forms HTTP/1.1" 404 2569
+WARNING 2024-04-12 09:48:02,293 log 8052 18668 Not Found: /HW4/image
+WARNING 2024-04-12 09:48:02,294 basehttp 8052 18668 "GET /HW4/image HTTP/1.1" 404 2551
+WARNING 2024-04-12 09:48:04,988 log 8052 18668 Not Found: /HW4/
+WARNING 2024-04-12 09:48:04,988 basehttp 8052 18668 "GET /HW4/ HTTP/1.1" 404 2536
+WARNING 2024-04-12 09:48:12,661 log 8052 18668 Not Found: /HW4/image
+WARNING 2024-04-12 09:48:12,661 basehttp 8052 18668 "GET /HW4/image HTTP/1.1" 404 2551
+WARNING 2024-04-12 09:48:21,133 log 8052 18668 Not Found: /HW4/image/ad
+WARNING 2024-04-12 09:48:21,133 basehttp 8052 18668 "GET /HW4/image/ad HTTP/1.1" 404 2560
+WARNING 2024-04-12 09:48:27,788 log 8052 18668 Not Found: /HW4/image/upload_image
+WARNING 2024-04-12 09:48:27,788 basehttp 8052 18668 "GET /HW4/image/upload_image HTTP/1.1" 404 2590
+WARNING 2024-04-12 09:48:38,429 log 8052 18668 Not Found: /HW4/upload_image
+WARNING 2024-04-12 09:48:38,429 basehttp 8052 18668 "GET /HW4/upload_image HTTP/1.1" 404 2572
+WARNING 2024-04-12 09:48:44,740 log 8052 18668 Not Found: /HW4/
+WARNING 2024-04-12 09:48:44,740 basehttp 8052 18668 "GET /HW4/ HTTP/1.1" 404 2536
+INFO 2024-04-12 09:53:57,951 autoreload 8052 6220 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 09:53:58,396 autoreload 19720 23256 Watching for file changes with StatReloader
+INFO 2024-04-12 09:56:42,224 autoreload 19720 23256 E:\Python\Django\myproject\Homework4app\models.py changed, reloading.
+INFO 2024-04-12 09:56:42,673 autoreload 11788 12036 Watching for file changes with StatReloader
+INFO 2024-04-12 09:58:15,188 autoreload 11788 12036 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 09:58:15,635 autoreload 13460 7724 Watching for file changes with StatReloader
+INFO 2024-04-12 09:59:06,682 autoreload 13460 7724 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-12 09:59:07,117 autoreload 13496 21856 Watching for file changes with StatReloader
+WARNING 2024-04-12 09:59:53,994 log 13496 14124 Not Found: /HW4/
+WARNING 2024-04-12 09:59:53,995 basehttp 13496 14124 "GET /HW4/ HTTP/1.1" 404 2486
+WARNING 2024-04-12 09:59:59,940 log 13496 14124 Not Found: /HW4/update_product
+WARNING 2024-04-12 09:59:59,941 basehttp 13496 14124 "GET /HW4/update_product HTTP/1.1" 404 2528
+WARNING 2024-04-12 10:00:11,419 log 13496 14124 Not Found: /
+WARNING 2024-04-12 10:00:11,419 basehttp 13496 14124 "GET / HTTP/1.1" 404 2371
+WARNING 2024-04-12 10:00:11,685 log 13496 14124 Not Found: /
+WARNING 2024-04-12 10:00:11,685 basehttp 13496 14124 "GET / HTTP/1.1" 404 2371
+WARNING 2024-04-12 10:00:18,069 log 13496 14124 Not Found: /HW4
+WARNING 2024-04-12 10:00:18,070 basehttp 13496 14124 "GET /HW4 HTTP/1.1" 404 2483
+WARNING 2024-04-12 10:00:22,237 log 13496 14124 Not Found: /HW4/
+WARNING 2024-04-12 10:00:22,238 basehttp 13496 14124 "GET /HW4/ HTTP/1.1" 404 2486
+WARNING 2024-04-12 10:00:29,988 log 13496 14124 Not Found: /HW4/update_product
+WARNING 2024-04-12 10:00:29,988 basehttp 13496 14124 "GET /HW4/update_product HTTP/1.1" 404 2528
+WARNING 2024-04-12 10:00:32,677 log 13496 14124 Not Found: /HW4/update_product 1
+WARNING 2024-04-12 10:00:32,678 basehttp 13496 14124 "GET /HW4/update_product%201 HTTP/1.1" 404 2536
+WARNING 2024-04-12 10:00:42,620 log 13496 14124 Not Found: /HW4/update_product/1
+WARNING 2024-04-12 10:00:42,620 basehttp 13496 14124 "GET /HW4/update_product/1 HTTP/1.1" 404 2534
+WARNING 2024-04-12 10:00:53,532 log 13496 14124 Not Found: /HW4/1
+WARNING 2024-04-12 10:00:53,533 basehttp 13496 14124 "GET /HW4/1 HTTP/1.1" 404 2489
+WARNING 2024-04-12 10:00:56,804 log 13496 14124 Not Found: /HW4/
+WARNING 2024-04-12 10:00:56,805 basehttp 13496 14124 "GET /HW4/ HTTP/1.1" 404 2486
+WARNING 2024-04-12 10:01:07,564 log 13496 14124 Not Found: /HW4
+WARNING 2024-04-12 10:01:07,565 basehttp 13496 14124 "GET /HW4 HTTP/1.1" 404 2483
+INFO 2024-04-12 10:01:49,242 autoreload 13496 21856 E:\Python\Django\myproject\Homework4app\models.py changed, reloading.
+INFO 2024-04-12 10:01:49,700 autoreload 23036 10832 Watching for file changes with StatReloader
+WARNING 2024-04-12 10:01:52,666 log 23036 6660 Not Found: /HW4
+WARNING 2024-04-12 10:01:52,667 basehttp 23036 6660 "GET /HW4 HTTP/1.1" 404 2483
+WARNING 2024-04-12 10:01:58,622 log 23036 6660 Not Found: /HW4/update_product
+WARNING 2024-04-12 10:01:58,622 basehttp 23036 6660 "GET /HW4/update_product HTTP/1.1" 404 2528
+WARNING 2024-04-12 10:02:07,397 log 23036 6660 Not Found: /HW4/update_product 1
+WARNING 2024-04-12 10:02:07,397 basehttp 23036 6660 "GET /HW4/update_product%201 HTTP/1.1" 404 2536
+WARNING 2024-04-12 10:02:12,268 log 23036 6660 Not Found: /HW4/update_product=1
+WARNING 2024-04-12 10:02:12,269 basehttp 23036 6660 "GET /HW4/update_product=1 HTTP/1.1" 404 2536
+WARNING 2024-04-12 10:02:16,252 log 23036 6660 Not Found: /HW4/update_product/1
+WARNING 2024-04-12 10:02:16,252 basehttp 23036 6660 "GET /HW4/update_product/1 HTTP/1.1" 404 2534
+INFO 2024-04-12 10:12:00,532 autoreload 23036 10832 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:12:00,986 autoreload 10900 7916 Watching for file changes with StatReloader
+INFO 2024-04-12 10:12:23,414 autoreload 12752 8540 Watching for file changes with StatReloader
+INFO 2024-04-12 10:13:25,765 autoreload 22188 20584 Watching for file changes with StatReloader
+INFO 2024-04-12 10:15:22,664 autoreload 22188 20584 E:\Python\Django\myproject\Homework2app\views.py changed, reloading.
+INFO 2024-04-12 10:15:23,127 autoreload 1232 10724 Watching for file changes with StatReloader
+INFO 2024-04-12 10:16:47,561 autoreload 1232 10724 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:16:48,019 autoreload 19700 4316 Watching for file changes with StatReloader
+INFO 2024-04-12 10:18:28,706 autoreload 19700 4316 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:18:29,140 autoreload 18588 22392 Watching for file changes with StatReloader
+INFO 2024-04-12 10:18:58,718 autoreload 18588 22392 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:18:59,141 autoreload 3600 8628 Watching for file changes with StatReloader
+INFO 2024-04-12 10:19:20,591 autoreload 3600 8628 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:19:21,016 autoreload 14888 5800 Watching for file changes with StatReloader
+INFO 2024-04-12 10:20:34,632 autoreload 7860 19424 Watching for file changes with StatReloader
+INFO 2024-04-12 10:22:03,082 autoreload 7860 19424 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-12 10:22:03,523 autoreload 12188 23184 Watching for file changes with StatReloader
+INFO 2024-04-12 10:27:58,928 autoreload 12188 23184 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 10:27:59,349 autoreload 20708 2312 Watching for file changes with StatReloader
+INFO 2024-04-12 10:29:03,426 autoreload 20708 2312 E:\Python\Django\myproject\Homework4app\models.py changed, reloading.
+INFO 2024-04-12 10:29:03,870 autoreload 4396 18756 Watching for file changes with StatReloader
+INFO 2024-04-12 10:29:23,291 autoreload 4396 18756 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 10:29:23,739 autoreload 22820 10560 Watching for file changes with StatReloader
+INFO 2024-04-12 10:31:03,350 autoreload 22820 10560 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-12 10:31:03,802 autoreload 6000 23252 Watching for file changes with StatReloader
+INFO 2024-04-12 10:31:18,307 autoreload 6000 23252 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:31:18,759 autoreload 14740 20544 Watching for file changes with StatReloader
+WARNING 2024-04-12 10:31:21,839 log 14740 8648 Not Found: /
+WARNING 2024-04-12 10:31:21,840 basehttp 14740 8648 "GET / HTTP/1.1" 404 2165
+INFO 2024-04-12 10:31:26,737 basehttp 14740 8648 "GET /HW4 HTTP/1.1" 200 22
+WARNING 2024-04-12 10:31:31,455 log 14740 8648 Not Found: /HW4/
+WARNING 2024-04-12 10:31:31,456 basehttp 14740 8648 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 10:31:37,493 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:31:37,494 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:31:51,764 log 14740 8648 Not Found: /HW4/list_of_products
+WARNING 2024-04-12 10:31:51,764 basehttp 14740 8648 "GET /HW4/list_of_products HTTP/1.1" 404 2719
+WARNING 2024-04-12 10:32:14,453 log 14740 8648 Not Found: /HW4/
+WARNING 2024-04-12 10:32:14,453 basehttp 14740 8648 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 10:32:22,484 log 14740 8648 Not Found: /HW4/name
+WARNING 2024-04-12 10:32:22,485 basehttp 14740 8648 "GET /HW4/name HTTP/1.1" 404 2683
+WARNING 2024-04-12 10:32:28,132 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:32:28,133 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:32:44,155 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:32:44,156 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:32:47,307 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:32:47,307 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:34:09,972 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:34:09,973 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:34:19,245 log 14740 8648 Not Found: /HW4/
+WARNING 2024-04-12 10:34:19,245 basehttp 14740 8648 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 10:34:25,797 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:34:25,797 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:34:45,611 log 14740 8648 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:34:45,612 basehttp 14740 8648 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:35:18,661 log 14740 8648 Not Found: /HW4/Homework4app/upload_image.html
+WARNING 2024-04-12 10:35:18,662 basehttp 14740 8648 "GET /HW4/Homework4app/upload_image.html HTTP/1.1" 404 2761
+WARNING 2024-04-12 10:35:26,429 log 14740 8648 Not Found: /HW4/form
+WARNING 2024-04-12 10:35:26,430 basehttp 14740 8648 "GET /HW4/form HTTP/1.1" 404 2683
+WARNING 2024-04-12 10:35:43,885 log 14740 8648 Not Found: /HW4/answer
+WARNING 2024-04-12 10:35:43,885 basehttp 14740 8648 "GET /HW4/answer HTTP/1.1" 404 2689
+INFO 2024-04-12 10:37:15,994 autoreload 14740 20544 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:37:16,433 autoreload 6952 17760 Watching for file changes with StatReloader
+INFO 2024-04-12 10:37:33,828 autoreload 6952 17760 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:37:34,251 autoreload 14312 18592 Watching for file changes with StatReloader
+INFO 2024-04-12 10:37:39,861 basehttp 14312 16484 "GET /HW4 HTTP/1.1" 200 22
+WARNING 2024-04-12 10:37:43,699 log 14312 16484 Not Found: /HW4/
+WARNING 2024-04-12 10:37:43,699 basehttp 14312 16484 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 10:37:48,605 log 14312 16484 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:37:48,606 basehttp 14312 16484 "GET /HW4/upload_image HTTP/1.1" 404 2707
+INFO 2024-04-12 10:38:14,273 autoreload 14312 18592 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:38:14,739 autoreload 4592 10956 Watching for file changes with StatReloader
+WARNING 2024-04-12 10:38:16,074 log 4592 16396 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:38:16,075 basehttp 4592 16396 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:38:23,798 log 4592 16396 Not Found: /HW4/
+WARNING 2024-04-12 10:38:23,798 basehttp 4592 16396 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 10:38:29,821 log 4592 16396 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:38:29,821 basehttp 4592 16396 "GET /HW4/upload_image HTTP/1.1" 404 2707
+INFO 2024-04-12 10:39:05,943 autoreload 4592 10956 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:39:06,375 autoreload 22356 1172 Watching for file changes with StatReloader
+WARNING 2024-04-12 10:39:09,282 log 22356 22116 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:39:09,283 basehttp 22356 22116 "GET /HW4/upload_image HTTP/1.1" 404 2707
+INFO 2024-04-12 10:39:13,697 basehttp 22356 22116 "GET /HW4 HTTP/1.1" 200 22
+WARNING 2024-04-12 10:39:16,624 log 22356 22116 Not Found: /HW4/
+WARNING 2024-04-12 10:39:16,624 basehttp 22356 22116 "GET /HW4/ HTTP/1.1" 404 2671
+INFO 2024-04-12 10:40:30,118 autoreload 22356 1172 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:40:30,550 autoreload 16772 23072 Watching for file changes with StatReloader
+INFO 2024-04-12 10:41:49,051 autoreload 16772 23072 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:41:49,497 autoreload 10948 19424 Watching for file changes with StatReloader
+WARNING 2024-04-12 10:41:59,107 log 10948 8916 Not Found: /HW4/
+WARNING 2024-04-12 10:41:59,107 basehttp 10948 8916 "GET /HW4/ HTTP/1.1" 404 2671
+INFO 2024-04-12 10:42:10,018 basehttp 10948 8916 "GET /HW4 HTTP/1.1" 200 22
+INFO 2024-04-12 10:42:28,505 autoreload 10948 19424 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:42:28,953 autoreload 19188 21236 Watching for file changes with StatReloader
+INFO 2024-04-12 10:42:30,537 basehttp 19188 17292 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 10:42:45,915 log 19188 17292 Not Found: /HW4/list_of_products
+WARNING 2024-04-12 10:42:45,915 basehttp 19188 17292 "GET /HW4/list_of_products HTTP/1.1" 404 2719
+WARNING 2024-04-12 10:42:58,197 log 19188 17292 Not Found: /HW4/index
+WARNING 2024-04-12 10:42:58,198 basehttp 19188 17292 "GET /HW4/index HTTP/1.1" 404 2686
+WARNING 2024-04-12 10:43:10,508 log 19188 17292 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:43:10,509 basehttp 19188 17292 "GET /HW4/upload_image HTTP/1.1" 404 2707
+INFO 2024-04-12 10:43:46,595 autoreload 19188 21236 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:43:47,033 autoreload 14260 1780 Watching for file changes with StatReloader
+INFO 2024-04-12 10:44:26,743 autoreload 14260 1780 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:44:27,159 autoreload 10720 17608 Watching for file changes with StatReloader
+INFO 2024-04-12 10:44:57,741 autoreload 10720 17608 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:44:58,163 autoreload 18628 1572 Watching for file changes with StatReloader
+INFO 2024-04-12 10:45:02,752 basehttp 18628 7940 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 10:45:06,274 log 18628 7940 Not Found: /HW4/
+WARNING 2024-04-12 10:45:06,275 basehttp 18628 7940 "GET /HW4/ HTTP/1.1" 404 2671
+WARNING 2024-04-12 10:45:13,685 log 18628 7940 Not Found: /HW4/upload_image
+WARNING 2024-04-12 10:45:13,685 basehttp 18628 7940 "GET /HW4/upload_image HTTP/1.1" 404 2707
+WARNING 2024-04-12 10:45:25,885 log 18628 7940 Not Found: /HW4/upload_image/milk
+WARNING 2024-04-12 10:45:25,885 basehttp 18628 7940 "GET /HW4/upload_image/milk HTTP/1.1" 404 2722
+WARNING 2024-04-12 10:45:35,837 log 18628 7940 Not Found: /HW4/milk
+WARNING 2024-04-12 10:45:35,837 basehttp 18628 7940 "GET /HW4/milk HTTP/1.1" 404 2683
+INFO 2024-04-12 10:47:41,223 autoreload 18628 1572 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 10:47:41,663 autoreload 3588 18492 Watching for file changes with StatReloader
+INFO 2024-04-12 10:49:07,071 autoreload 3588 18492 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 10:49:07,522 autoreload 19416 3168 Watching for file changes with StatReloader
+INFO 2024-04-12 10:55:56,528 autoreload 19416 3168 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:55:56,980 autoreload 1816 13412 Watching for file changes with StatReloader
+INFO 2024-04-12 10:57:48,045 autoreload 1816 13412 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 10:57:48,481 autoreload 11248 21048 Watching for file changes with StatReloader
+INFO 2024-04-12 11:03:39,546 autoreload 11248 21048 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:03:39,998 autoreload 9772 6660 Watching for file changes with StatReloader
+INFO 2024-04-12 11:06:33,163 autoreload 9772 6660 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 11:06:33,647 autoreload 19676 19552 Watching for file changes with StatReloader
+INFO 2024-04-12 11:09:24,702 basehttp 19676 18704 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 11:09:27,354 log 19676 18704 Not Found: /HW4/
+WARNING 2024-04-12 11:09:27,355 basehttp 19676 18704 "GET /HW4/ HTTP/1.1" 404 2945
+WARNING 2024-04-12 11:09:31,446 log 19676 18704 Not Found: /HW4/user
+WARNING 2024-04-12 11:09:31,447 basehttp 19676 18704 "GET /HW4/user HTTP/1.1" 404 2957
+INFO 2024-04-12 11:14:30,905 autoreload 1488 1172 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:14:35,595 log 1488 2408 Not Found: /HW4/user
+WARNING 2024-04-12 11:14:35,595 basehttp 1488 2408 "GET /HW4/user HTTP/1.1" 404 2851
+INFO 2024-04-12 11:14:51,604 autoreload 1488 1172 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 11:14:52,055 autoreload 8232 6240 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:14:54,459 log 8232 13132 Not Found: /HW4/user/add
+WARNING 2024-04-12 11:14:54,460 basehttp 8232 13132 "GET /HW4/user/add HTTP/1.1" 404 2866
+WARNING 2024-04-12 11:15:00,837 log 8232 13132 Not Found: /HW4/user
+WARNING 2024-04-12 11:15:00,837 basehttp 8232 13132 "GET /HW4/user HTTP/1.1" 404 2854
+INFO 2024-04-12 11:15:05,653 autoreload 8232 6240 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 11:15:06,091 autoreload 18856 20696 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:15:07,196 log 18856 9548 Not Found: /HW4/user/
+WARNING 2024-04-12 11:15:07,196 basehttp 18856 9548 "GET /HW4/user/ HTTP/1.1" 404 2854
+INFO 2024-04-12 11:16:06,341 autoreload 18856 20696 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 11:16:06,786 autoreload 22996 16392 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:16:07,699 log 22996 13576 Not Found: /HW4/user/
+WARNING 2024-04-12 11:16:07,699 basehttp 22996 13576 "GET /HW4/user/ HTTP/1.1" 404 2854
+INFO 2024-04-12 11:16:29,426 autoreload 22996 16392 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 11:16:29,854 autoreload 19668 1184 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:16:35,285 log 19668 11480 Not Found: /HW4/user/
+WARNING 2024-04-12 11:16:35,285 basehttp 19668 11480 "GET /HW4/user/ HTTP/1.1" 404 2854
+WARNING 2024-04-12 11:16:39,525 log 19668 11480 Not Found: /HW4/
+WARNING 2024-04-12 11:16:39,526 basehttp 19668 11480 "GET /HW4/ HTTP/1.1" 404 2839
+WARNING 2024-04-12 11:16:45,693 log 19668 11480 Not Found: /HW4/user
+WARNING 2024-04-12 11:16:45,694 basehttp 19668 11480 "GET /HW4/user HTTP/1.1" 404 2851
+INFO 2024-04-12 11:20:06,722 autoreload 4484 8660 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:20:10,867 log 4484 14544 Not Found: /HW4/user
+WARNING 2024-04-12 11:20:10,867 basehttp 4484 14544 "GET /HW4/user HTTP/1.1" 404 2851
+INFO 2024-04-12 11:20:14,738 basehttp 4484 14544 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 11:20:19,416 log 4484 14544 Not Found: /HW4/
+WARNING 2024-04-12 11:20:19,416 basehttp 4484 14544 "GET /HW4/ HTTP/1.1" 404 2839
+WARNING 2024-04-12 11:20:26,389 log 4484 14544 Not Found: /HW4/upload
+WARNING 2024-04-12 11:20:26,390 basehttp 4484 14544 "GET /HW4/upload HTTP/1.1" 404 2857
+WARNING 2024-04-12 11:20:30,909 log 4484 14544 Not Found: /HW4/user
+WARNING 2024-04-12 11:20:30,910 basehttp 4484 14544 "GET /HW4/user HTTP/1.1" 404 2851
+INFO 2024-04-12 11:20:54,878 autoreload 4484 8660 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-12 11:20:55,306 autoreload 16236 14300 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:20:55,471 log 16236 18348 Not Found: /HW4/user
+WARNING 2024-04-12 11:20:55,472 basehttp 16236 18348 "GET /HW4/user HTTP/1.1" 404 2851
+WARNING 2024-04-12 11:20:58,246 log 16236 18348 Not Found: /HW4/user
+WARNING 2024-04-12 11:20:58,246 basehttp 16236 18348 "GET /HW4/user HTTP/1.1" 404 2851
+INFO 2024-04-12 11:22:33,194 autoreload 16236 14300 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:22:33,625 autoreload 12644 23008 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:22:37,604 log 12644 20564 Not Found: /HW4/user
+WARNING 2024-04-12 11:22:37,605 basehttp 12644 20564 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:22:41,172 log 12644 20564 Not Found: /HW4/user
+WARNING 2024-04-12 11:22:41,173 basehttp 12644 20564 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:23:24,940 log 12644 20564 Not Found: /HW4/user
+WARNING 2024-04-12 11:23:24,941 basehttp 12644 20564 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:23:28,643 log 12644 20564 Not Found: /HW4/user
+WARNING 2024-04-12 11:23:28,644 basehttp 12644 20564 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:23:30,996 log 12644 20564 Not Found: /HW4/user
+WARNING 2024-04-12 11:23:30,996 basehttp 12644 20564 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:23:45,693 log 12644 20564 Not Found: /HW4/
+WARNING 2024-04-12 11:23:45,693 basehttp 12644 20564 "GET /HW4/ HTTP/1.1" 404 2945
+WARNING 2024-04-12 11:23:54,277 log 12644 20564 Not Found: /HW4/HW4
+WARNING 2024-04-12 11:23:54,277 basehttp 12644 20564 "GET /HW4/HW4 HTTP/1.1" 404 2954
+WARNING 2024-04-12 11:24:07,525 log 12644 20564 Not Found: /HW4/Homework4app
+WARNING 2024-04-12 11:24:07,525 basehttp 12644 20564 "GET /HW4/Homework4app HTTP/1.1" 404 2981
+WARNING 2024-04-12 11:24:14,532 log 12644 20564 Not Found: /HW4/Homework4app/
+WARNING 2024-04-12 11:24:14,533 basehttp 12644 20564 "GET /HW4/Homework4app/ HTTP/1.1" 404 2984
+WARNING 2024-04-12 11:24:23,885 log 12644 20564 Not Found: /HW4/Homework4app/user
+WARNING 2024-04-12 11:24:23,885 basehttp 12644 20564 "GET /HW4/Homework4app/user HTTP/1.1" 404 2996
+WARNING 2024-04-12 11:24:32,117 log 12644 20564 Not Found: /
+WARNING 2024-04-12 11:24:32,117 basehttp 12644 20564 "GET / HTTP/1.1" 404 2271
+INFO 2024-04-12 11:24:38,818 basehttp 12644 20564 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 11:24:47,975 log 12644 20564 Not Found: /HW4/
+WARNING 2024-04-12 11:24:47,976 basehttp 12644 20564 "GET /HW4/ HTTP/1.1" 404 2945
+WARNING 2024-04-12 11:24:58,701 log 12644 20564 Not Found: /HW4/user
+WARNING 2024-04-12 11:24:58,701 basehttp 12644 20564 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:25:02,670 log 12644 20564 Not Found: /HW4/user/
+WARNING 2024-04-12 11:25:02,670 basehttp 12644 20564 "GET /HW4/user/ HTTP/1.1" 404 2960
+INFO 2024-04-12 11:27:27,909 autoreload 12644 23008 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 11:27:28,350 autoreload 12836 23080 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:27:28,603 log 12836 10452 Not Found: /HW4/user/
+WARNING 2024-04-12 11:27:28,603 basehttp 12836 10452 "GET /HW4/user/ HTTP/1.1" 404 2960
+WARNING 2024-04-12 11:27:31,350 log 12836 10452 Not Found: /HW4/user
+WARNING 2024-04-12 11:27:31,351 basehttp 12836 10452 "GET /HW4/user HTTP/1.1" 404 2957
+INFO 2024-04-12 11:27:35,762 basehttp 12836 10452 "GET /HW4 HTTP/1.1" 200 11
+INFO 2024-04-12 11:30:23,515 autoreload 12836 23080 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:30:23,950 autoreload 16772 16576 Watching for file changes with StatReloader
+INFO 2024-04-12 11:30:50,464 autoreload 16772 16576 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:30:50,892 autoreload 10712 1380 Watching for file changes with StatReloader
+INFO 2024-04-12 11:30:57,101 autoreload 10712 1380 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:30:57,516 autoreload 16444 12280 Watching for file changes with StatReloader
+INFO 2024-04-12 11:31:00,153 basehttp 16444 3756 "GET /HW4 HTTP/1.1" 200 11
+INFO 2024-04-12 11:33:49,795 autoreload 16444 12280 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 11:33:50,269 autoreload 12756 15960 Watching for file changes with StatReloader
+INFO 2024-04-12 11:33:51,381 basehttp 12756 2596 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 11:33:56,173 log 12756 2596 Not Found: /HW4/user
+WARNING 2024-04-12 11:33:56,174 basehttp 12756 2596 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:34:01,150 log 12756 2596 Not Found: /HW4/user/
+WARNING 2024-04-12 11:34:01,150 basehttp 12756 2596 "GET /HW4/user/ HTTP/1.1" 404 2960
+WARNING 2024-04-12 11:37:38,229 log 12756 2596 Not Found: /HW4/user/
+WARNING 2024-04-12 11:37:38,229 basehttp 12756 2596 "GET /HW4/user/ HTTP/1.1" 404 2960
+WARNING 2024-04-12 11:37:39,484 log 12756 2596 Not Found: /HW4/user/
+WARNING 2024-04-12 11:37:39,485 basehttp 12756 2596 "GET /HW4/user/ HTTP/1.1" 404 2960
+WARNING 2024-04-12 11:37:44,653 log 12756 2596 Not Found: /HW4/user/alex
+WARNING 2024-04-12 11:37:44,654 basehttp 12756 2596 "GET /HW4/user/alex HTTP/1.1" 404 2972
+WARNING 2024-04-12 11:38:02,218 log 12756 2596 Not Found: /HW4/user/alex/alex@mail.ru/18
+WARNING 2024-04-12 11:38:02,219 basehttp 12756 2596 "GET /HW4/user/alex/alex@mail.ru/18 HTTP/1.1" 404 3020
+WARNING 2024-04-12 11:38:14,758 log 12756 2596 Not Found: /HW4/user/alex alex@mail.ru 18
+WARNING 2024-04-12 11:38:14,759 basehttp 12756 2596 "GET /HW4/user/alex%20alex@mail.ru%2018 HTTP/1.1" 404 3024
+WARNING 2024-04-12 11:38:21,102 log 12756 2596 Not Found: /HW4/user
+WARNING 2024-04-12 11:38:21,102 basehttp 12756 2596 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:38:35,398 log 12756 2596 Not Found: /HW4/user_form
+WARNING 2024-04-12 11:38:35,399 basehttp 12756 2596 "GET /HW4/user_form HTTP/1.1" 404 2972
+INFO 2024-04-12 11:38:42,123 basehttp 12756 2596 "GET /HW4 HTTP/1.1" 200 11
+WARNING 2024-04-12 11:39:49,729 log 12756 2596 Not Found: /HW4/
+WARNING 2024-04-12 11:39:49,729 basehttp 12756 2596 "GET /HW4/ HTTP/1.1" 404 2945
+WARNING 2024-04-12 11:42:06,149 log 12756 2596 Not Found: /HW4/
+WARNING 2024-04-12 11:42:06,150 basehttp 12756 2596 "GET /HW4/ HTTP/1.1" 404 2945
+WARNING 2024-04-12 11:42:08,758 log 12756 2596 Not Found: /HW4/user
+WARNING 2024-04-12 11:42:08,758 basehttp 12756 2596 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:42:57,805 log 12756 2596 Not Found: /HW4/user
+WARNING 2024-04-12 11:42:57,805 basehttp 12756 2596 "GET /HW4/user HTTP/1.1" 404 2957
+INFO 2024-04-12 11:45:25,134 autoreload 20992 19312 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:45:29,836 log 20992 19144 Not Found: /HW4/user
+WARNING 2024-04-12 11:45:29,837 basehttp 20992 19144 "GET /HW4/user HTTP/1.1" 404 2957
+WARNING 2024-04-12 11:48:43,437 log 20992 19144 Not Found: /HW4/user
+WARNING 2024-04-12 11:48:43,437 basehttp 20992 19144 "GET /HW4/user HTTP/1.1" 404 2957
+INFO 2024-04-12 11:49:16,347 autoreload 20992 19312 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:49:16,787 autoreload 21192 5164 Watching for file changes with StatReloader
+INFO 2024-04-12 11:49:19,692 basehttp 21192 6220 "GET / HTTP/1.1" 200 11
+INFO 2024-04-12 11:49:25,723 basehttp 21192 6220 "GET /user HTTP/1.1" 301 0
+INFO 2024-04-12 11:49:25,766 basehttp 21192 12240 "GET /user/ HTTP/1.1" 200 552
+INFO 2024-04-12 11:49:47,525 basehttp 21192 12240 "GET /upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:50:28,930 basehttp 21192 12240 "GET /upload/ HTTP/1.1" 200 284
+INFO 2024-04-12 11:50:41,354 basehttp 21192 12240 "GET /upload/ HTTP/1.1" 200 284
+INFO 2024-04-12 11:50:55,362 basehttp 21192 12240 "GET /upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:50:56,921 basehttp 21192 12240 "GET /upload HTTP/1.1" 301 0
+INFO 2024-04-12 11:50:56,924 basehttp 21192 21388 "GET /upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:51:50,825 autoreload 21192 5164 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:51:51,268 autoreload 16196 3356 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:51:52,252 log 16196 14928 Not Found: /
+WARNING 2024-04-12 11:51:52,253 basehttp 16196 14928 "GET / HTTP/1.1" 404 2277
+WARNING 2024-04-12 11:51:59,177 log 16196 14928 Not Found: /Homework4/
+WARNING 2024-04-12 11:51:59,178 basehttp 16196 14928 "GET /Homework4/ HTTP/1.1" 404 2987
+WARNING 2024-04-12 11:52:03,742 log 16196 14928 Not Found: /Homework4/user
+WARNING 2024-04-12 11:52:03,743 basehttp 16196 14928 "GET /Homework4/user HTTP/1.1" 404 2999
+INFO 2024-04-12 11:52:21,015 autoreload 16196 3356 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:52:21,447 autoreload 9736 20004 Watching for file changes with StatReloader
+WARNING 2024-04-12 11:52:22,874 log 9736 19400 Not Found: /
+WARNING 2024-04-12 11:52:22,874 basehttp 9736 19400 "GET / HTTP/1.1" 404 2272
+INFO 2024-04-12 11:52:25,507 basehttp 9736 19400 "GET /HW4/ HTTP/1.1" 200 11
+INFO 2024-04-12 11:52:31,455 basehttp 9736 19400 "GET /HW4/user HTTP/1.1" 301 0
+INFO 2024-04-12 11:52:31,466 basehttp 9736 14888 "GET /HW4/user/ HTTP/1.1" 200 552
+INFO 2024-04-12 11:52:48,383 autoreload 9736 20004 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-12 11:52:48,808 autoreload 20520 16600 Watching for file changes with StatReloader
+INFO 2024-04-12 11:52:54,316 basehttp 20520 2292 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:54:49,192 autoreload 20520 16600 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 11:54:49,638 autoreload 11648 4560 Watching for file changes with StatReloader
+INFO 2024-04-12 11:54:49,765 basehttp 11648 23088 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:54:53,315 basehttp 11648 23088 "GET /HW4/upload HTTP/1.1" 301 0
+INFO 2024-04-12 11:54:53,317 basehttp 11648 4456 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:54:57,558 basehttp 11648 4456 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:55:16,353 autoreload 11648 4560 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 11:55:16,793 autoreload 8276 20584 Watching for file changes with StatReloader
+INFO 2024-04-12 11:55:20,699 basehttp 8276 12368 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:55:25,303 autoreload 8276 20584 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 11:55:25,755 autoreload 16432 20668 Watching for file changes with StatReloader
+INFO 2024-04-12 11:55:26,592 basehttp 16432 15964 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:55:31,122 basehttp 16432 15964 "GET /HW4/upload/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:55:42,182 basehttp 16432 15964 "GET /HW4/user/ HTTP/1.1" 200 552
+INFO 2024-04-12 11:56:16,877 autoreload 16432 20668 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 11:56:17,308 autoreload 10480 360 Watching for file changes with StatReloader
+INFO 2024-04-12 11:58:26,768 autoreload 19920 19400 Watching for file changes with StatReloader
+INFO 2024-04-12 11:58:27,040 basehttp 19920 21036 "GET /HW4/upload_image HTTP/1.1" 301 0
+INFO 2024-04-12 11:58:27,045 basehttp 19920 12672 "GET /HW4/upload_image/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:58:30,813 basehttp 19920 12672 "GET /HW4/upload_image/ HTTP/1.1" 200 275
+INFO 2024-04-12 11:59:41,277 autoreload 19920 19400 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 11:59:41,728 autoreload 7948 4920 Watching for file changes with StatReloader
+INFO 2024-04-12 11:59:41,860 basehttp 7948 1572 "GET /HW4/upload_image/ HTTP/1.1" 200 624
+INFO 2024-04-12 12:04:06,408 autoreload 7948 4920 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:04:06,842 autoreload 22952 12160 Watching for file changes with StatReloader
+INFO 2024-04-12 12:04:47,576 autoreload 22952 12160 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:04:48,042 autoreload 16280 12120 Watching for file changes with StatReloader
+INFO 2024-04-12 12:06:10,403 autoreload 16280 12120 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 12:06:10,862 autoreload 18552 12644 Watching for file changes with StatReloader
+INFO 2024-04-12 12:08:33,102 autoreload 18552 12644 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:08:33,548 autoreload 14000 14628 Watching for file changes with StatReloader
+INFO 2024-04-12 12:09:50,831 autoreload 14000 14628 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:09:51,252 autoreload 7376 22928 Watching for file changes with StatReloader
+INFO 2024-04-12 12:10:14,889 autoreload 7376 22928 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:10:15,340 autoreload 3492 17760 Watching for file changes with StatReloader
+INFO 2024-04-12 12:10:33,751 autoreload 3492 17760 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:10:34,196 autoreload 7272 14124 Watching for file changes with StatReloader
+INFO 2024-04-12 12:10:38,392 autoreload 7272 14124 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:10:38,807 autoreload 18752 1740 Watching for file changes with StatReloader
+INFO 2024-04-12 12:11:46,961 autoreload 18752 1740 E:\Python\Django\myproject\Homework4app\models.py changed, reloading.
+INFO 2024-04-12 12:11:47,402 autoreload 4020 2376 Watching for file changes with StatReloader
+WARNING 2024-04-12 12:11:55,405 log 4020 20568 Not Found: /HW4/upload_image/
+WARNING 2024-04-12 12:11:55,406 basehttp 4020 20568 "GET /HW4/upload_image/ HTTP/1.1" 404 2426
+WARNING 2024-04-12 12:11:59,415 log 4020 20568 Not Found: /HW4/user/
+WARNING 2024-04-12 12:11:59,415 basehttp 4020 20568 "GET /HW4/user/ HTTP/1.1" 404 2402
+WARNING 2024-04-12 12:12:10,590 log 4020 20568 Not Found: /HW4/
+WARNING 2024-04-12 12:12:10,590 basehttp 4020 20568 "GET /HW4/ HTTP/1.1" 404 2387
+WARNING 2024-04-12 12:12:36,429 log 4020 20568 Not Found: /HW4/
+WARNING 2024-04-12 12:12:36,430 basehttp 4020 20568 "GET /HW4/ HTTP/1.1" 404 2387
+INFO 2024-04-12 12:12:36,595 autoreload 4020 2376 E:\Python\Django\myproject\Homework4app\views.py changed, reloading.
+INFO 2024-04-12 12:12:37,038 autoreload 19740 10520 Watching for file changes with StatReloader
+WARNING 2024-04-12 12:13:54,526 log 19740 11896 Not Found: /HW4/
+WARNING 2024-04-12 12:13:54,526 basehttp 19740 11896 "GET /HW4/ HTTP/1.1" 404 2387
+INFO 2024-04-12 12:13:54,713 autoreload 19740 10520 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 12:13:55,130 autoreload 11404 13356 Watching for file changes with StatReloader
+WARNING 2024-04-12 12:13:58,849 log 11404 18936 Not Found: /HW4/
+WARNING 2024-04-12 12:13:58,849 basehttp 11404 18936 "GET /HW4/ HTTP/1.1" 404 2566
+WARNING 2024-04-12 12:14:06,183 log 11404 18936 Not Found: /HW4/user/
+WARNING 2024-04-12 12:14:06,184 basehttp 11404 18936 "GET /HW4/user/ HTTP/1.1" 404 2581
+INFO 2024-04-12 12:14:10,564 basehttp 11404 18936 "GET /HW4/user_form/ HTTP/1.1" 200 552
+INFO 2024-04-12 12:14:20,679 basehttp 11404 18936 "GET /HW4/user_form/ HTTP/1.1" 200 552
+INFO 2024-04-12 12:14:21,042 autoreload 11404 13356 E:\Python\Django\myproject\Homework4app\urls.py changed, reloading.
+INFO 2024-04-12 12:14:21,489 autoreload 20528 16792 Watching for file changes with StatReloader
+WARNING 2024-04-12 12:14:24,275 log 20528 20668 Not Found: /HW4/
+WARNING 2024-04-12 12:14:24,275 basehttp 20528 20668 "GET /HW4/ HTTP/1.1" 404 2553
+INFO 2024-04-12 12:14:28,572 basehttp 20528 20668 "GET /HW4/user/ HTTP/1.1" 200 552
+INFO 2024-04-12 12:14:33,107 basehttp 20528 20668 "GET /HW4/update/ HTTP/1.1" 200 1586
+INFO 2024-04-12 12:15:45,788 basehttp 20528 20668 "GET /HW4/update/ HTTP/1.1" 200 1586
+INFO 2024-04-12 12:15:48,143 basehttp 20528 20668 "GET /HW4/update/ HTTP/1.1" 200 1545
+INFO 2024-04-12 12:20:30,208 autoreload 20528 16792 E:\Python\Django\myproject\Homework4app\forms.py changed, reloading.
+INFO 2024-04-12 12:20:30,655 autoreload 3168 18244 Watching for file changes with StatReloader
+INFO 2024-04-18 14:54:49,510 autoreload 14544 11236 Watching for file changes with StatReloader
+WARNING 2024-04-18 14:54:51,735 log 14544 21516 Not Found: /
+WARNING 2024-04-18 14:54:51,735 basehttp 14544 21516 "GET / HTTP/1.1" 404 2376
+WARNING 2024-04-18 14:54:51,872 log 14544 21516 Not Found: /favicon.ico
+WARNING 2024-04-18 14:54:51,873 basehttp 14544 21516 "GET /favicon.ico HTTP/1.1" 404 2427
+INFO 2024-04-18 14:54:55,548 basehttp 14544 21516 "GET /admin HTTP/1.1" 301 0
+INFO 2024-04-18 14:54:55,556 basehttp 14544 23596 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 14:54:55,628 basehttp 14544 23596 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-04-18 14:54:55,781 basehttp 14544 23612 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-04-18 14:54:55,782 basehttp 14544 23596 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-04-18 14:54:55,786 basehttp 14544 19300 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-04-18 14:54:55,788 basehttp 14544 11640 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-04-18 14:54:55,789 basehttp 14544 20372 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-04-18 14:54:55,794 basehttp 14544 23612 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-04-18 14:54:55,795 basehttp 14544 24236 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-04-18 14:55:38,832 basehttp 14544 24236 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4319
+INFO 2024-04-18 14:57:12,639 autoreload 14544 11236 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-18 14:57:13,144 autoreload 18352 984 Watching for file changes with StatReloader
+INFO 2024-04-18 14:57:39,886 basehttp 18352 21008 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-04-18 14:57:43,270 basehttp 18352 21008 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-04-18 15:01:46,142 autoreload 20836 21300 Watching for file changes with StatReloader
+INFO 2024-04-18 15:01:49,322 basehttp 20836 18896 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-04-18 15:01:53,251 basehttp 20836 18896 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:01:53,256 basehttp 20836 18896 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:02:00,829 basehttp 20836 18896 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:02:00,852 basehttp 20836 18896 "GET /admin/ HTTP/1.1" 200 5944
+INFO 2024-04-18 15:02:00,897 basehttp 20836 18896 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-04-18 15:02:00,904 basehttp 20836 18896 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-04-18 15:02:00,905 basehttp 20836 8112 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-04-18 15:09:04,606 basehttp 20836 3716 "GET /admin/auth/user/ HTTP/1.1" 200 11914
+INFO 2024-04-18 15:09:04,625 basehttp 20836 3716 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-04-18 15:09:04,632 basehttp 20836 11724 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-04-18 15:09:04,636 basehttp 20836 19100 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-04-18 15:09:04,637 basehttp 20836 13564 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-04-18 15:09:04,638 basehttp 20836 3716 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-04-18 15:09:04,640 basehttp 20836 5048 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:09:04,643 basehttp 20836 11724 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-04-18 15:09:04,644 basehttp 20836 3716 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-04-18 15:09:04,646 basehttp 20836 19100 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-04-18 15:09:04,646 basehttp 20836 5048 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-04-18 15:09:04,665 basehttp 20836 22744 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-04-18 15:09:04,680 basehttp 20836 22744 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-04-18 15:09:04,706 basehttp 20836 13564 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-04-18 15:09:04,732 basehttp 20836 13564 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-04-18 15:09:04,732 basehttp 20836 5048 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-04-18 15:09:04,733 basehttp 20836 22744 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-04-18 15:09:47,586 basehttp 20836 22744 "GET /admin/auth/user/add/ HTTP/1.1" 200 11238
+INFO 2024-04-18 15:09:47,603 basehttp 20836 5048 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:09:47,605 basehttp 20836 22744 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-04-18 15:09:47,610 basehttp 20836 13564 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-04-18 15:09:47,612 basehttp 20836 5048 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-04-18 15:09:47,615 basehttp 20836 22744 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-04-18 15:11:16,281 basehttp 20836 22744 "POST /admin/auth/user/add/ HTTP/1.1" 200 11747
+INFO 2024-04-18 15:11:16,298 basehttp 20836 22744 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:11:31,920 basehttp 20836 22744 "POST /admin/auth/user/add/ HTTP/1.1" 200 11595
+INFO 2024-04-18 15:11:31,933 basehttp 20836 22744 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:11:47,350 basehttp 20836 22744 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:11:47,399 basehttp 20836 22744 "GET /admin/auth/user/2/change/ HTTP/1.1" 200 23621
+INFO 2024-04-18 15:11:47,426 basehttp 20836 22744 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:11:47,438 basehttp 20836 19100 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2024-04-18 15:11:47,439 basehttp 20836 5048 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-04-18 15:11:47,439 basehttp 20836 13564 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-04-18 15:11:47,440 basehttp 20836 3716 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO 2024-04-18 15:11:47,488 basehttp 20836 3716 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-04-18 15:11:47,488 basehttp 20836 22744 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-04-18 15:11:47,489 basehttp 20836 19100 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-04-18 15:11:47,489 basehttp 20836 5048 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-04-18 15:11:47,490 basehttp 20836 13564 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-04-18 15:17:27,521 basehttp 20836 13324 "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:17:27,533 basehttp 20836 13324 "GET /admin/auth/user/ HTTP/1.1" 200 12657
+INFO 2024-04-18 15:17:27,551 basehttp 20836 13324 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:18:32,319 basehttp 20836 13324 "GET /admin/auth/group/add/ HTTP/1.1" 200 12750
+INFO 2024-04-18 15:18:32,340 basehttp 20836 13324 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:19:35,204 basehttp 20836 13324 "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:19:35,217 basehttp 20836 13324 "GET /admin/auth/group/ HTTP/1.1" 200 9503
+INFO 2024-04-18 15:19:35,236 basehttp 20836 13324 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:19:50,448 basehttp 20836 13324 "GET /admin/auth/user/ HTTP/1.1" 200 12736
+INFO 2024-04-18 15:19:50,469 basehttp 20836 13324 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:19:52,587 basehttp 20836 13324 "GET /admin/auth/user/2/change/ HTTP/1.1" 200 23439
+INFO 2024-04-18 15:19:52,601 basehttp 20836 13324 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:20:34,107 basehttp 20836 13324 "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:20:34,119 basehttp 20836 13324 "GET /admin/auth/user/ HTTP/1.1" 200 12958
+INFO 2024-04-18 15:20:34,135 basehttp 20836 13324 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:20:56,579 basehttp 20836 13324 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-18 15:20:58,455 basehttp 20836 13324 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:20:58,459 basehttp 20836 13324 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:21:11,766 basehttp 20836 13324 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:21:11,774 basehttp 20836 13324 "GET /admin/ HTTP/1.1" 200 4892
+INFO 2024-04-18 15:26:28,646 autoreload 20836 21300 E:\Python\Django\myproject\Homework5app\models.py changed, reloading.
+INFO 2024-04-18 15:26:29,114 autoreload 8072 20840 Watching for file changes with StatReloader
+INFO 2024-04-18 15:36:24,653 autoreload 11208 10652 Watching for file changes with StatReloader
+INFO 2024-04-18 15:37:45,707 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 200 4892
+INFO 2024-04-18 15:37:48,800 basehttp 11208 12432 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-18 15:37:52,812 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:37:52,821 basehttp 11208 12432 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:38:02,513 basehttp 11208 12432 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:38:02,524 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 200 9554
+WARNING 2024-04-18 15:41:12,916 log 11208 12432 Not Found: /
+WARNING 2024-04-18 15:41:12,916 basehttp 11208 12432 "GET / HTTP/1.1" 404 2376
+WARNING 2024-04-18 15:41:19,215 log 11208 12432 Not Found: /user
+WARNING 2024-04-18 15:41:19,215 basehttp 11208 12432 "GET /user HTTP/1.1" 404 2406
+WARNING 2024-04-18 15:41:19,412 log 11208 12432 Not Found: /user
+WARNING 2024-04-18 15:41:19,413 basehttp 11208 12432 "GET /user HTTP/1.1" 404 2406
+INFO 2024-04-18 15:41:23,523 basehttp 11208 12432 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-18 15:41:28,605 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:41:28,609 basehttp 11208 12432 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:41:41,084 basehttp 11208 12432 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:41:41,092 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 200 4892
+INFO 2024-04-18 15:42:48,365 basehttp 11208 12432 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-18 15:42:51,061 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:42:51,065 basehttp 11208 12432 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:42:58,636 basehttp 11208 12432 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:42:58,646 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 200 9554
+INFO 2024-04-18 15:43:01,094 basehttp 11208 12432 "GET /admin/auth/user/ HTTP/1.1" 200 14267
+INFO 2024-04-18 15:43:01,109 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:43:09,794 basehttp 11208 12432 "GET /admin/auth/user/2/change/ HTTP/1.1" 200 26179
+INFO 2024-04-18 15:43:09,809 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:44:55,911 basehttp 11208 12432 "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:44:55,924 basehttp 11208 12432 "GET /admin/auth/user/ HTTP/1.1" 200 14489
+INFO 2024-04-18 15:44:55,944 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:04,798 basehttp 11208 12432 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-18 15:45:06,092 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:45:06,096 basehttp 11208 12432 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:45:20,278 basehttp 11208 12432 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:45:20,287 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 200 6876
+INFO 2024-04-18 15:45:27,065 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 8050
+INFO 2024-04-18 15:45:27,083 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:28,607 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 8036
+INFO 2024-04-18 15:45:28,629 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:29,251 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 8043
+INFO 2024-04-18 15:45:29,268 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:29,849 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 8057
+INFO 2024-04-18 15:45:29,863 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:34,100 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 8043
+INFO 2024-04-18 15:45:34,116 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:36,326 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 8036
+INFO 2024-04-18 15:45:36,340 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:45:37,498 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 8050
+INFO 2024-04-18 15:45:37,519 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:13,748 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 8057
+INFO 2024-04-18 15:46:13,764 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:14,978 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 8043
+INFO 2024-04-18 15:46:14,995 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:16,141 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 8036
+INFO 2024-04-18 15:46:16,157 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:16,669 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 8050
+INFO 2024-04-18 15:46:16,686 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:30,340 basehttp 11208 12432 "POST /admin/logout/ HTTP/1.1" 200 3817
+INFO 2024-04-18 15:46:32,419 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:46:32,425 basehttp 11208 12432 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-18 15:46:40,958 basehttp 11208 12432 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:46:40,967 basehttp 11208 12432 "GET /admin/ HTTP/1.1" 200 9926
+INFO 2024-04-18 15:46:44,109 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 8962
+INFO 2024-04-18 15:46:44,127 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:45,124 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 8948
+INFO 2024-04-18 15:46:45,139 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:45,593 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 8955
+INFO 2024-04-18 15:46:45,611 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:46:46,099 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 8969
+INFO 2024-04-18 15:46:46,113 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:48:30,034 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 8955
+INFO 2024-04-18 15:48:30,051 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:48:30,619 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 8969
+INFO 2024-04-18 15:48:30,638 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:48:32,284 basehttp 11208 12432 "GET /admin/Homework5app/category/add/ HTTP/1.1" 200 9810
+INFO 2024-04-18 15:48:32,303 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:49:15,729 basehttp 11208 12432 "POST /admin/Homework5app/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:49:15,738 basehttp 11208 12432 "GET /admin/Homework5app/category/add/ HTTP/1.1" 200 10098
+INFO 2024-04-18 15:49:15,754 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:50:32,566 basehttp 11208 12432 "POST /admin/Homework5app/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:50:32,577 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11041
+INFO 2024-04-18 15:50:32,597 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:50:38,449 basehttp 11208 12432 "GET /admin/Homework5app/category/add/ HTTP/1.1" 200 9810
+INFO 2024-04-18 15:50:38,465 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:50:55,322 basehttp 11208 12432 "POST /admin/Homework5app/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:50:55,331 basehttp 11208 12432 "GET /admin/Homework5app/category/add/ HTTP/1.1" 200 10100
+INFO 2024-04-18 15:50:55,348 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:51:22,859 basehttp 11208 12432 "POST /admin/Homework5app/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:51:22,870 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11698
+INFO 2024-04-18 15:51:22,888 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:51:30,999 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 8955
+INFO 2024-04-18 15:51:31,014 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:51:32,383 basehttp 11208 12432 "GET /admin/Homework5app/client/add/ HTTP/1.1" 200 11728
+INFO 2024-04-18 15:51:32,402 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:51:53,358 basehttp 11208 12432 "POST /admin/Homework5app/client/add/ HTTP/1.1" 200 11972
+INFO 2024-04-18 15:51:53,376 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:52:01,181 basehttp 11208 12432 "POST /admin/Homework5app/client/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:52:01,191 basehttp 11208 12432 "GET /admin/Homework5app/client/add/ HTTP/1.1" 200 12027
+INFO 2024-04-18 15:52:01,207 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:52:17,142 basehttp 11208 12432 "POST /admin/Homework5app/client/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:52:17,153 basehttp 11208 12432 "GET /admin/Homework5app/client/add/ HTTP/1.1" 200 12027
+INFO 2024-04-18 15:52:17,169 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:52:41,510 basehttp 11208 12432 "POST /admin/Homework5app/client/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:52:41,522 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 11446
+INFO 2024-04-18 15:52:41,538 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:52:45,211 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 8962
+INFO 2024-04-18 15:52:45,228 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:52:48,012 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15008
+INFO 2024-04-18 15:52:48,030 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:53:36,018 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:53:36,031 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15293
+INFO 2024-04-18 15:53:36,052 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:53:54,748 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:53:54,761 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15295
+INFO 2024-04-18 15:53:54,776 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:54:24,284 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:54:24,297 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15293
+INFO 2024-04-18 15:54:24,316 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:54:53,505 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:54:53,518 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15293
+INFO 2024-04-18 15:54:53,534 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:55:22,093 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:55:22,106 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15293
+INFO 2024-04-18 15:55:22,125 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:55:59,222 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:55:59,234 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15294
+INFO 2024-04-18 15:55:59,253 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:56:38,204 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:56:38,218 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15297
+INFO 2024-04-18 15:56:38,238 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:57:11,829 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:57:11,842 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 12992
+INFO 2024-04-18 15:57:11,861 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:57:17,173 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15008
+INFO 2024-04-18 15:57:17,191 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:57:43,692 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:57:43,705 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15293
+INFO 2024-04-18 15:57:43,722 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:04,787 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:58:04,799 basehttp 11208 12432 "GET /admin/Homework5app/product/add/ HTTP/1.1" 200 15293
+INFO 2024-04-18 15:58:04,817 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:20,192 basehttp 11208 12432 "POST /admin/Homework5app/product/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:58:20,205 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13986
+INFO 2024-04-18 15:58:20,224 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:21,894 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 15:58:21,911 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:24,181 basehttp 11208 12432 "GET /admin/Homework5app/category/4/change/ HTTP/1.1" 200 10030
+INFO 2024-04-18 15:58:24,199 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:30,252 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 15:58:30,270 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:31,648 basehttp 11208 12432 "GET /admin/Homework5app/product/11/change/ HTTP/1.1" 200 15282
+INFO 2024-04-18 15:58:31,664 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:32,944 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 15:58:32,961 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:36,026 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 15:58:36,041 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:38,925 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 11219
+INFO 2024-04-18 15:58:38,942 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:44,001 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 15:58:44,017 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:53,629 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 15:58:53,651 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:56,858 basehttp 11208 12432 "GET /admin/Homework5app/category/4/change/ HTTP/1.1" 200 10030
+INFO 2024-04-18 15:58:56,875 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:58:59,797 basehttp 11208 12432 "GET /admin/Homework5app/category/4/history/ HTTP/1.1" 200 8248
+INFO 2024-04-18 15:59:02,336 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 15:59:02,351 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:10,448 basehttp 11208 12432 "GET /admin/Homework5app/category/1/change/ HTTP/1.1" 200 10030
+INFO 2024-04-18 15:59:10,472 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:14,925 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 15:59:14,940 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:16,577 basehttp 11208 12432 "GET /admin/Homework5app/product/11/change/ HTTP/1.1" 200 15282
+INFO 2024-04-18 15:59:16,595 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:23,073 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 8948
+INFO 2024-04-18 15:59:23,088 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:24,631 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13518
+INFO 2024-04-18 15:59:24,650 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:39,269 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:59:39,281 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 10756
+INFO 2024-04-18 15:59:39,296 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:43,132 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13518
+INFO 2024-04-18 15:59:43,151 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:49,463 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:59:49,478 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 15:59:49,499 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 15:59:54,872 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 15:59:54,885 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 15:59:54,903 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:02,635 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 16:00:02,648 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 16:00:02,663 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:08,472 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 16:00:08,487 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 16:00:08,509 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:13,776 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 16:00:13,788 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 16:00:13,804 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:18,759 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 16:00:18,771 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 16:00:18,789 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:23,495 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 16:00:23,511 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 16:00:23,532 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:28,713 basehttp 11208 12432 "POST /admin/Homework5app/order/add/ HTTP/1.1" 302 0
+INFO 2024-04-18 16:00:28,726 basehttp 11208 12432 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13827
+INFO 2024-04-18 16:00:28,745 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:30,642 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 13655
+INFO 2024-04-18 16:00:30,664 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:33,545 basehttp 11208 12432 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 13846
+INFO 2024-04-18 16:00:33,568 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:40,864 basehttp 11208 12432 "GET /admin/auth/user/ HTTP/1.1" 200 14267
+INFO 2024-04-18 16:00:40,880 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:42,615 basehttp 11208 12432 "GET /admin/auth/group/ HTTP/1.1" 200 10826
+INFO 2024-04-18 16:00:42,632 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:44,610 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 16:00:44,627 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:00:52,549 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 16:00:52,565 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:01:06,282 basehttp 11208 12432 "GET /admin/Homework5app/category/1/change/ HTTP/1.1" 200 10030
+INFO 2024-04-18 16:01:06,298 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:01:12,350 basehttp 11208 12432 "GET /admin/Homework5app/category/1/history/ HTTP/1.1" 200 8248
+INFO 2024-04-18 16:01:18,921 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 11219
+INFO 2024-04-18 16:01:18,935 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:01:20,682 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 13655
+INFO 2024-04-18 16:01:20,699 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:01:27,151 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 16:01:27,167 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:03:17,301 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 16:03:17,320 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:03:35,417 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 16:03:35,436 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:04:17,294 basehttp 11208 12432 "GET /admin/Homework5app/product/1/change/ HTTP/1.1" 200 15280
+INFO 2024-04-18 16:04:17,313 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:04:28,796 basehttp 11208 12432 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 16:04:28,813 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:04:30,524 basehttp 11208 12432 "GET /admin/Homework5app/order/ HTTP/1.1" 200 13655
+INFO 2024-04-18 16:04:30,549 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:04:32,613 basehttp 11208 12432 "GET /admin/Homework5app/client/ HTTP/1.1" 200 11219
+INFO 2024-04-18 16:04:32,628 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:04:35,311 basehttp 11208 12432 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 16:04:35,328 basehttp 11208 12432 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 16:15:19,492 autoreload 11208 10652 E:\Python\Django\myproject\Homework5app\models.py changed, reloading.
+INFO 2024-04-18 16:15:19,996 autoreload 19504 24168 Watching for file changes with StatReloader
+INFO 2024-04-18 16:16:21,333 autoreload 19504 24168 E:\Python\Django\myproject\Homework5app\models.py changed, reloading.
+INFO 2024-04-18 16:16:21,804 autoreload 12744 8300 Watching for file changes with StatReloader
+INFO 2024-04-18 16:16:51,595 autoreload 12744 8300 E:\Python\Django\myproject\Homework5app\models.py changed, reloading.
+INFO 2024-04-18 16:16:52,068 autoreload 18016 8456 Watching for file changes with StatReloader
+INFO 2024-04-18 16:18:40,235 autoreload 18016 8456 E:\Python\Django\myproject\Homework5app\models.py changed, reloading.
+INFO 2024-04-18 16:18:40,722 autoreload 11224 22272 Watching for file changes with StatReloader
+INFO 2024-04-18 17:47:07,931 autoreload 20764 24164 Watching for file changes with StatReloader
+INFO 2024-04-18 17:47:11,956 basehttp 20764 8016 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 17:47:11,987 basehttp 20764 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 17:47:15,943 basehttp 20764 8016 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 17:47:15,957 basehttp 20764 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 17:47:37,369 basehttp 20764 8016 "GET /admin/Homework5app/product/11/change/ HTTP/1.1" 200 15086
+INFO 2024-04-18 17:47:37,387 basehttp 20764 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 17:48:24,882 basehttp 20764 8016 "GET /admin/Homework5app/product/ HTTP/1.1" 200 13772
+INFO 2024-04-18 17:48:24,897 basehttp 20764 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 17:48:37,770 basehttp 20764 8016 "GET /admin/Homework5app/product/1/change/ HTTP/1.1" 200 15084
+INFO 2024-04-18 17:48:37,789 basehttp 20764 8016 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 17:52:06,700 autoreload 20764 24164 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 17:52:07,148 autoreload 3812 12852 Watching for file changes with StatReloader
+INFO 2024-04-18 17:57:14,731 autoreload 3812 12852 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 17:57:15,179 autoreload 21740 13408 Watching for file changes with StatReloader
+INFO 2024-04-18 17:57:35,775 autoreload 21740 13408 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 17:57:36,221 autoreload 11148 4368 Watching for file changes with StatReloader
+INFO 2024-04-18 17:58:50,189 autoreload 18944 3952 Watching for file changes with StatReloader
+INFO 2024-04-18 18:00:29,067 autoreload 18944 3952 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:00:29,515 autoreload 7244 9700 Watching for file changes with StatReloader
+INFO 2024-04-18 18:01:34,854 autoreload 7244 9700 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:01:35,329 autoreload 8880 21664 Watching for file changes with StatReloader
+INFO 2024-04-18 18:02:18,576 autoreload 24468 5636 Watching for file changes with StatReloader
+INFO 2024-04-18 18:02:42,697 autoreload 24072 21136 Watching for file changes with StatReloader
+INFO 2024-04-18 18:03:41,912 autoreload 24072 21136 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:03:42,348 autoreload 9060 18304 Watching for file changes with StatReloader
+INFO 2024-04-18 18:03:58,874 autoreload 9060 18304 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:03:59,306 autoreload 22576 16232 Watching for file changes with StatReloader
+INFO 2024-04-18 18:04:13,799 autoreload 22576 16232 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:04:14,244 autoreload 12456 14188 Watching for file changes with StatReloader
+INFO 2024-04-18 18:04:51,094 autoreload 12456 14188 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:04:51,546 autoreload 23892 6212 Watching for file changes with StatReloader
+INFO 2024-04-18 18:05:42,654 autoreload 23892 6212 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:05:43,094 autoreload 2828 7812 Watching for file changes with StatReloader
+INFO 2024-04-18 18:06:04,701 autoreload 2828 7812 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:06:05,148 autoreload 21752 23144 Watching for file changes with StatReloader
+INFO 2024-04-18 18:06:26,762 autoreload 21752 23144 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:06:27,203 autoreload 17284 14100 Watching for file changes with StatReloader
+INFO 2024-04-18 18:06:35,587 autoreload 17284 14100 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:06:36,018 autoreload 23048 16352 Watching for file changes with StatReloader
+INFO 2024-04-18 18:06:42,356 autoreload 23048 16352 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:06:42,812 autoreload 14764 12256 Watching for file changes with StatReloader
+INFO 2024-04-18 18:06:47,116 autoreload 14764 12256 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:06:47,565 autoreload 21624 23360 Watching for file changes with StatReloader
+INFO 2024-04-18 18:06:56,958 autoreload 21624 23360 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:06:57,404 autoreload 23972 18700 Watching for file changes with StatReloader
+INFO 2024-04-18 18:07:06,811 autoreload 23972 18700 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:07:07,255 autoreload 22924 9180 Watching for file changes with StatReloader
+INFO 2024-04-18 18:07:20,736 autoreload 22924 9180 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:07:21,180 autoreload 8100 11924 Watching for file changes with StatReloader
+INFO 2024-04-18 18:07:36,678 autoreload 8100 11924 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:07:37,108 autoreload 13572 24276 Watching for file changes with StatReloader
+INFO 2024-04-18 18:07:42,445 autoreload 13572 24276 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:07:42,892 autoreload 22660 19004 Watching for file changes with StatReloader
+INFO 2024-04-18 18:07:51,263 autoreload 22660 19004 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:07:51,723 autoreload 24424 15956 Watching for file changes with StatReloader
+INFO 2024-04-18 18:08:00,093 autoreload 24424 15956 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:08:00,545 autoreload 16312 19668 Watching for file changes with StatReloader
+INFO 2024-04-18 18:08:06,892 autoreload 16312 19668 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:08:07,350 autoreload 12796 5216 Watching for file changes with StatReloader
+INFO 2024-04-18 18:08:36,075 autoreload 12796 5216 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:08:36,520 autoreload 16880 21892 Watching for file changes with StatReloader
+INFO 2024-04-18 18:09:01,155 autoreload 16880 21892 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:09:01,609 autoreload 8732 21196 Watching for file changes with StatReloader
+INFO 2024-04-18 18:09:16,084 autoreload 8732 21196 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:09:16,523 autoreload 1540 24356 Watching for file changes with StatReloader
+INFO 2024-04-18 18:09:19,070 basehttp 1540 4932 "GET /admin/Homework5app/product/1/change/ HTTP/1.1" 200 15084
+INFO 2024-04-18 18:09:19,173 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:09:21,536 basehttp 1540 4932 "GET /admin/Homework5app/product/ HTTP/1.1" 200 15376
+INFO 2024-04-18 18:09:21,552 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:09:37,635 basehttp 1540 4932 "GET /admin/Homework5app/order/ HTTP/1.1" 200 14825
+INFO 2024-04-18 18:09:37,653 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:09:53,193 basehttp 1540 4932 "GET /admin/Homework5app/client/ HTTP/1.1" 200 11987
+INFO 2024-04-18 18:09:53,208 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:09:57,702 basehttp 1540 4932 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 18:09:57,719 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:09:59,262 basehttp 1540 4932 "GET /admin/Homework5app/product/ HTTP/1.1" 200 15376
+INFO 2024-04-18 18:09:59,276 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:10:17,668 basehttp 1540 4932 "GET /admin/Homework5app/order/ HTTP/1.1" 200 14825
+INFO 2024-04-18 18:10:17,688 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:11:19,813 basehttp 1540 4932 "GET /admin/Homework5app/order/ HTTP/1.1" 200 14825
+INFO 2024-04-18 18:11:19,828 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:11:21,133 basehttp 1540 4932 "GET /admin/Homework5app/client/ HTTP/1.1" 200 11987
+INFO 2024-04-18 18:11:21,150 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:11:37,605 basehttp 1540 4932 "GET /admin/Homework5app/product/ HTTP/1.1" 200 15376
+INFO 2024-04-18 18:11:37,624 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:12:07,497 basehttp 1540 4932 "GET /admin/Homework5app/product/ HTTP/1.1" 200 15376
+INFO 2024-04-18 18:12:07,516 basehttp 1540 4932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:12:39,561 autoreload 1540 24356 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:12:40,010 autoreload 13424 9544 Watching for file changes with StatReloader
+INFO 2024-04-18 18:12:41,948 basehttp 13424 20388 "GET /admin/Homework5app/product/ HTTP/1.1" 200 16334
+INFO 2024-04-18 18:12:41,962 basehttp 13424 20388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:13:51,126 basehttp 13424 20388 "GET /admin/Homework5app/product/?o=3 HTTP/1.1" 200 16956
+INFO 2024-04-18 18:13:51,141 basehttp 13424 20388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:13:54,473 basehttp 13424 20388 "GET /admin/Homework5app/product/?o=1.3 HTTP/1.1" 200 17468
+INFO 2024-04-18 18:13:54,490 basehttp 13424 20388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:14:20,475 basehttp 13424 20388 "GET /admin/Homework5app/product/?o=3 HTTP/1.1" 200 16956
+INFO 2024-04-18 18:14:20,494 basehttp 13424 20388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:14:23,486 basehttp 13424 20388 "GET /admin/Homework5app/product/?o= HTTP/1.1" 200 16634
+INFO 2024-04-18 18:14:23,509 basehttp 13424 20388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:16:17,315 autoreload 13424 9544 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:16:17,789 autoreload 6008 14888 Watching for file changes with StatReloader
+INFO 2024-04-18 18:16:21,395 basehttp 6008 9880 "GET /admin/Homework5app/order/ HTTP/1.1" 200 15129
+INFO 2024-04-18 18:16:21,415 basehttp 6008 9880 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:16:40,572 autoreload 6008 14888 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:16:41,040 autoreload 24420 7660 Watching for file changes with StatReloader
+INFO 2024-04-18 18:16:43,008 basehttp 24420 4368 "GET /admin/Homework5app/product/ HTTP/1.1" 200 16644
+INFO 2024-04-18 18:16:43,028 basehttp 24420 4368 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:16:43,607 basehttp 24420 4368 "GET /admin/Homework5app/order/ HTTP/1.1" 200 15131
+INFO 2024-04-18 18:16:43,626 basehttp 24420 4368 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:17:08,940 autoreload 24420 7660 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:17:09,387 autoreload 9056 11452 Watching for file changes with StatReloader
+INFO 2024-04-18 18:17:14,288 basehttp 9056 6724 "GET /admin/Homework5app/product/ HTTP/1.1" 200 16644
+INFO 2024-04-18 18:17:14,305 basehttp 9056 6724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:17:14,773 basehttp 9056 6724 "GET /admin/Homework5app/order/ HTTP/1.1" 200 15129
+INFO 2024-04-18 18:17:14,789 basehttp 9056 6724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:17:47,467 autoreload 9056 11452 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:17:47,902 autoreload 24356 23908 Watching for file changes with StatReloader
+INFO 2024-04-18 18:17:50,448 basehttp 24356 23572 "GET /admin/Homework5app/product/ HTTP/1.1" 200 17132
+INFO 2024-04-18 18:17:50,470 basehttp 24356 23572 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:18:02,542 autoreload 24356 23908 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:18:03,012 autoreload 1708 23360 Watching for file changes with StatReloader
+INFO 2024-04-18 18:18:03,974 basehttp 1708 23444 "GET /admin/Homework5app/order/ HTTP/1.1" 200 15129
+INFO 2024-04-18 18:18:03,991 basehttp 1708 23444 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:18:04,442 basehttp 1708 23444 "GET /admin/Homework5app/product/ HTTP/1.1" 200 17139
+INFO 2024-04-18 18:18:04,463 basehttp 1708 23444 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:18:39,061 basehttp 1708 23444 "GET /admin/Homework5app/client/ HTTP/1.1" 200 12293
+INFO 2024-04-18 18:18:39,077 basehttp 1708 23444 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:18:39,943 autoreload 1708 23360 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:18:40,376 autoreload 14628 23884 Watching for file changes with StatReloader
+INFO 2024-04-18 18:18:41,938 basehttp 14628 22556 "GET /admin/Homework5app/product/ HTTP/1.1" 200 17139
+INFO 2024-04-18 18:18:41,956 basehttp 14628 22556 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:18:44,175 basehttp 14628 22556 "GET /admin/Homework5app/order/ HTTP/1.1" 200 15131
+INFO 2024-04-18 18:18:44,189 basehttp 14628 22556 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:19:05,338 basehttp 14628 22556 "GET /admin/Homework5app/product/ HTTP/1.1" 200 17139
+INFO 2024-04-18 18:19:05,355 basehttp 14628 22556 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:20:46,021 autoreload 14628 23884 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:20:46,481 autoreload 17564 17100 Watching for file changes with StatReloader
+INFO 2024-04-18 18:20:58,922 autoreload 17564 17100 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:20:59,363 autoreload 20032 6240 Watching for file changes with StatReloader
+INFO 2024-04-18 18:21:03,691 autoreload 20032 6240 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:21:04,135 autoreload 13720 11236 Watching for file changes with StatReloader
+INFO 2024-04-18 18:21:08,496 autoreload 13720 11236 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:21:08,937 autoreload 15436 21932 Watching for file changes with StatReloader
+INFO 2024-04-18 18:21:12,222 basehttp 15436 13664 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16476
+INFO 2024-04-18 18:21:12,238 basehttp 15436 13664 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:21:17,110 basehttp 15436 13664 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16476
+INFO 2024-04-18 18:21:17,124 basehttp 15436 13664 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:21:24,146 basehttp 15436 13664 "GET /admin/Homework5app/product/ HTTP/1.1" 200 17139
+INFO 2024-04-18 18:21:24,161 basehttp 15436 13664 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:21:25,324 basehttp 15436 13664 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16476
+INFO 2024-04-18 18:21:25,339 basehttp 15436 13664 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:21:28,964 basehttp 15436 13664 "GET /admin/Homework5app/client/ HTTP/1.1" 200 12293
+INFO 2024-04-18 18:21:28,981 basehttp 15436 13664 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:22:44,001 autoreload 15436 21932 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:22:44,446 autoreload 24572 24192 Watching for file changes with StatReloader
+INFO 2024-04-18 18:22:46,920 basehttp 24572 20640 "GET /admin/Homework5app/product/ HTTP/1.1" 200 19495
+INFO 2024-04-18 18:22:46,935 basehttp 24572 20640 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:22:51,691 basehttp 24572 20640 "GET /admin/Homework5app/product/?category__id__exact=1 HTTP/1.1" 200 16672
+INFO 2024-04-18 18:22:51,708 basehttp 24572 20640 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:22:55,491 basehttp 24572 20640 "GET /admin/Homework5app/product/? HTTP/1.1" 200 19495
+INFO 2024-04-18 18:22:55,505 basehttp 24572 20640 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:22:59,764 basehttp 24572 20640 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16879
+INFO 2024-04-18 18:22:59,782 basehttp 24572 20640 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:23:12,362 basehttp 24572 20640 "GET /admin/Homework5app/client/ HTTP/1.1" 200 13957
+INFO 2024-04-18 18:23:12,378 basehttp 24572 20640 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:24:47,013 autoreload 24572 24192 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:24:47,472 autoreload 15924 14276 Watching for file changes with StatReloader
+INFO 2024-04-18 18:24:49,401 basehttp 15924 4760 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16879
+INFO 2024-04-18 18:24:49,427 basehttp 15924 4760 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:24:49,916 basehttp 15924 4760 "GET /admin/Homework5app/client/ HTTP/1.1" 200 13568
+INFO 2024-04-18 18:24:49,931 basehttp 15924 4760 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:25:06,189 autoreload 15924 14276 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:25:06,640 autoreload 8648 20440 Watching for file changes with StatReloader
+INFO 2024-04-18 18:25:07,764 basehttp 8648 24152 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16879
+INFO 2024-04-18 18:25:07,783 basehttp 8648 24152 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:25:08,192 basehttp 8648 24152 "GET /admin/Homework5app/client/ HTTP/1.1" 200 12986
+INFO 2024-04-18 18:25:08,212 basehttp 8648 24152 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:25:19,230 basehttp 8648 24152 "GET /admin/Homework5app/product/ HTTP/1.1" 200 19495
+INFO 2024-04-18 18:25:19,246 basehttp 8648 24152 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:25:22,435 basehttp 8648 24152 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16879
+INFO 2024-04-18 18:25:22,450 basehttp 8648 24152 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:25:47,030 basehttp 8648 24152 "GET /admin/Homework5app/order/?client__id__exact=3 HTTP/1.1" 200 14579
+INFO 2024-04-18 18:25:47,047 basehttp 8648 24152 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:26:01,773 basehttp 8648 24152 "GET /admin/Homework5app/order/? HTTP/1.1" 200 16879
+INFO 2024-04-18 18:26:01,790 basehttp 8648 24152 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:29:36,798 autoreload 8648 20440 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:29:37,253 autoreload 13168 18352 Watching for file changes with StatReloader
+INFO 2024-04-18 18:29:40,362 basehttp 13168 17700 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16879
+INFO 2024-04-18 18:29:40,380 basehttp 13168 17700 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:29:41,696 basehttp 13168 17700 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20002
+INFO 2024-04-18 18:29:41,710 basehttp 13168 17700 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:38:13,972 autoreload 13168 18352 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:38:14,439 autoreload 22568 6060 Watching for file changes with StatReloader
+INFO 2024-04-18 18:40:01,598 autoreload 22568 6060 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:40:02,063 autoreload 8868 12536 Watching for file changes with StatReloader
+INFO 2024-04-18 18:40:33,650 basehttp 8868 22916 "GET /admin/Homework5app/order/ HTTP/1.1" 200 16879
+INFO 2024-04-18 18:40:33,668 basehttp 8868 22916 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:40:34,484 basehttp 8868 22916 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:40:34,505 basehttp 8868 22916 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:47:48,766 autoreload 8868 12536 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:47:49,241 autoreload 8124 19376 Watching for file changes with StatReloader
+INFO 2024-04-18 18:48:04,791 autoreload 8124 19376 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:48:05,232 autoreload 13664 8772 Watching for file changes with StatReloader
+INFO 2024-04-18 18:48:09,513 basehttp 13664 4492 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17369
+INFO 2024-04-18 18:48:09,534 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:18,563 basehttp 13664 4492 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:48:18,578 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:22,570 basehttp 13664 4492 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17369
+INFO 2024-04-18 18:48:22,585 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:26,857 basehttp 13664 4492 "GET /admin/Homework5app/client/ HTTP/1.1" 200 13459
+INFO 2024-04-18 18:48:26,874 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:28,797 basehttp 13664 4492 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17369
+INFO 2024-04-18 18:48:28,811 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:32,508 basehttp 13664 4492 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:48:32,529 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:35,970 basehttp 13664 4492 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17369
+INFO 2024-04-18 18:48:35,985 basehttp 13664 4492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:48:57,551 autoreload 13664 8772 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:48:57,995 autoreload 16712 17292 Watching for file changes with StatReloader
+INFO 2024-04-18 18:48:59,485 basehttp 16712 6724 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:48:59,507 basehttp 16712 6724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:49:00,056 basehttp 16712 6724 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 18:49:00,072 basehttp 16712 6724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:49:20,778 autoreload 16712 17292 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:49:21,224 autoreload 21528 22916 Watching for file changes with StatReloader
+INFO 2024-04-18 18:49:21,535 basehttp 21528 22524 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:49:21,560 basehttp 21528 22524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:49:22,018 basehttp 21528 22524 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 18:49:22,033 basehttp 21528 22524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:50:06,812 basehttp 21528 22524 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:50:06,829 basehttp 21528 22524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:50:15,492 autoreload 21528 22916 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:50:15,929 autoreload 24184 6648 Watching for file changes with StatReloader
+INFO 2024-04-18 18:50:18,208 basehttp 24184 11920 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:50:18,223 basehttp 24184 11920 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:50:18,601 basehttp 24184 11920 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 18:50:18,616 basehttp 24184 11920 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:50:19,282 basehttp 24184 11920 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:50:19,298 basehttp 24184 11920 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:52:37,607 basehttp 24184 11920 "GET /admin/Homework5app/category/ HTTP/1.1" 200 11484
+INFO 2024-04-18 18:52:37,624 basehttp 24184 11920 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:54:03,868 basehttp 24184 11920 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:54:03,884 basehttp 24184 11920 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:54:07,452 basehttp 24184 11920 "GET /admin/Homework5app/product/4/change/ HTTP/1.1" 200 15083
+INFO 2024-04-18 18:54:07,475 basehttp 24184 11920 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:22,225 autoreload 24184 6648 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 18:59:22,686 autoreload 21932 8112 Watching for file changes with StatReloader
+INFO 2024-04-18 18:59:25,605 basehttp 21932 7012 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:59:25,626 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:27,349 basehttp 21932 7012 "GET /admin/Homework5app/product/9/change/ HTTP/1.1" 200 14914
+INFO 2024-04-18 18:59:27,367 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:40,647 basehttp 21932 7012 "GET /admin/Homework5app/client/ HTTP/1.1" 200 13459
+INFO 2024-04-18 18:59:40,664 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:41,818 basehttp 21932 7012 "GET /admin/Homework5app/client/1/change/ HTTP/1.1" 200 12612
+INFO 2024-04-18 18:59:41,833 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:46,193 basehttp 21932 7012 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 18:59:46,209 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:48,816 basehttp 21932 7012 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 18:59:48,829 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 18:59:50,108 basehttp 21932 7012 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 12627
+INFO 2024-04-18 18:59:50,125 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:01:29,932 basehttp 21932 7012 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20092
+INFO 2024-04-18 19:01:29,947 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:01:31,394 basehttp 21932 7012 "GET /admin/Homework5app/product/9/change/ HTTP/1.1" 200 14914
+INFO 2024-04-18 19:01:31,417 basehttp 21932 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:05:23,589 autoreload 21932 8112 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:05:24,043 autoreload 24228 16600 Watching for file changes with StatReloader
+INFO 2024-04-18 19:05:25,195 basehttp 24228 21892 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:05:25,215 basehttp 24228 21892 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:05:25,639 basehttp 24228 21892 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:05:25,657 basehttp 24228 21892 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:05:26,707 basehttp 24228 21892 "GET /admin/Homework5app/product/9/change/ HTTP/1.1" 200 14914
+INFO 2024-04-18 19:05:26,724 basehttp 24228 21892 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:05:43,667 autoreload 24228 16600 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:05:44,119 autoreload 2344 15984 Watching for file changes with StatReloader
+INFO 2024-04-18 19:05:44,470 basehttp 2344 24492 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:05:44,493 basehttp 2344 24492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:05:44,946 basehttp 2344 24492 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:05:44,962 basehttp 2344 24492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:05:47,591 basehttp 2344 24492 "GET /admin/Homework5app/product/9/change/ HTTP/1.1" 200 15556
+INFO 2024-04-18 19:05:47,606 basehttp 2344 24492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:06:25,645 basehttp 2344 24492 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:06:25,662 basehttp 2344 24492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:06:32,312 basehttp 2344 24492 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 12627
+INFO 2024-04-18 19:06:32,330 basehttp 2344 24492 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:07:22,121 autoreload 2344 15984 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:07:22,566 autoreload 18352 4220 Watching for file changes with StatReloader
+INFO 2024-04-18 19:07:24,305 basehttp 18352 2592 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:07:24,320 basehttp 18352 2592 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:07:24,922 basehttp 18352 2592 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:07:24,938 basehttp 18352 2592 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:07:26,232 basehttp 18352 2592 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 14409
+INFO 2024-04-18 19:07:26,251 basehttp 18352 2592 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:08:05,728 autoreload 18352 4220 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:08:06,165 autoreload 17284 3164 Watching for file changes with StatReloader
+INFO 2024-04-18 19:08:08,331 basehttp 17284 3812 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:08:08,350 basehttp 17284 3812 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:08:08,924 basehttp 17284 3812 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:08:08,939 basehttp 17284 3812 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:08:10,657 basehttp 17284 3812 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 13166
+INFO 2024-04-18 19:08:10,675 basehttp 17284 3812 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:08:47,816 basehttp 17284 3812 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:08:47,831 basehttp 17284 3812 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:09:12,778 autoreload 17284 3164 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:09:13,233 autoreload 6132 15876 Watching for file changes with StatReloader
+INFO 2024-04-18 19:09:34,827 autoreload 6132 15876 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:09:35,276 autoreload 7300 20752 Watching for file changes with StatReloader
+INFO 2024-04-18 19:09:36,680 basehttp 7300 5184 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:09:36,696 basehttp 7300 5184 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:09:38,277 basehttp 7300 5184 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 13166
+INFO 2024-04-18 19:09:38,295 basehttp 7300 5184 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:17:04,822 autoreload 7300 20752 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:17:05,287 autoreload 22692 21988 Watching for file changes with StatReloader
+INFO 2024-04-18 19:17:31,893 basehttp 22692 23060 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:17:31,908 basehttp 22692 23060 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:17:35,279 basehttp 22692 23060 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:17:35,295 basehttp 22692 23060 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:17:36,878 basehttp 22692 23060 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 13408
+INFO 2024-04-18 19:17:36,896 basehttp 22692 23060 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:17:36,931 basehttp 22692 19860 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2024-04-18 19:20:47,637 autoreload 22692 21988 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:20:48,088 autoreload 24508 15956 Watching for file changes with StatReloader
+INFO 2024-04-18 19:20:50,597 basehttp 24508 22356 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:20:50,615 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:20:51,740 basehttp 24508 22356 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:20:51,758 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:20:52,992 basehttp 24508 22356 "GET /admin/Homework5app/order/9/change/ HTTP/1.1" 200 13494
+INFO 2024-04-18 19:20:53,006 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:21:26,952 basehttp 24508 22356 "GET /admin/Homework5app/client/ HTTP/1.1" 200 13459
+INFO 2024-04-18 19:21:26,971 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:21:30,287 basehttp 24508 22356 "GET /admin/Homework5app/product/ HTTP/1.1" 200 20710
+INFO 2024-04-18 19:21:30,302 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:21:33,084 basehttp 24508 22356 "GET /admin/Homework5app/order/ HTTP/1.1" 200 17373
+INFO 2024-04-18 19:21:33,101 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:21:37,334 basehttp 24508 22356 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 13149
+INFO 2024-04-18 19:21:37,352 basehttp 24508 22356 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-18 19:22:03,835 autoreload 24508 15956 E:\Python\Django\myproject\Homework5app\admin.py changed, reloading.
+INFO 2024-04-18 19:22:04,298 autoreload 3812 21072 Watching for file changes with StatReloader
+INFO 2024-04-18 19:22:04,462 basehttp 3812 13924 "GET /admin/Homework5app/order/add/ HTTP/1.1" 200 14386
+INFO 2024-04-18 19:22:04,482 basehttp 3812 13924 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-21 18:09:02,420 autoreload 24704 23696 Watching for file changes with StatReloader
+INFO 2024-04-21 18:33:17,543 autoreload 2348 25496 Watching for file changes with StatReloader
+WARNING 2024-04-21 18:33:20,994 log 2348 18456 Not Found: /
+WARNING 2024-04-21 18:33:20,995 basehttp 2348 18456 "GET / HTTP/1.1" 404 12168
+INFO 2024-04-21 18:33:21,103 basehttp 2348 16636 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-04-21 18:33:21,104 basehttp 2348 18456 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-04-21 18:33:21,104 basehttp 2348 24856 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-04-21 18:33:21,112 basehttp 2348 24856 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2024-04-21 18:33:28,358 log 2348 24856 Not Found: /__debug__
+WARNING 2024-04-21 18:33:28,358 basehttp 2348 24856 "GET /__debug__ HTTP/1.1" 404 12221
+WARNING 2024-04-21 18:33:31,198 log 2348 24856 Not Found: /__debug__/
+WARNING 2024-04-21 18:33:31,199 basehttp 2348 24856 "GET /__debug__/ HTTP/1.1" 404 13462
+WARNING 2024-04-21 18:34:00,630 log 2348 24856 Not Found: /
+WARNING 2024-04-21 18:34:00,631 basehttp 2348 24856 "GET / HTTP/1.1" 404 12167
+WARNING 2024-04-21 18:34:00,935 log 2348 24856 Not Found: /
+WARNING 2024-04-21 18:34:00,935 basehttp 2348 24856 "GET / HTTP/1.1" 404 12167
+INFO 2024-04-21 18:34:14,229 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=HistoryPanel HTTP/1.1" 200 9060
+INFO 2024-04-21 18:34:14,233 basehttp 2348 24856 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-04-21 18:34:38,418 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=VersionsPanel HTTP/1.1" 200 760
+INFO 2024-04-21 18:35:14,879 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=SettingsPanel HTTP/1.1" 200 26639
+INFO 2024-04-21 18:35:43,242 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=HeadersPanel HTTP/1.1" 200 5206
+INFO 2024-04-21 18:37:20,484 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=RequestPanel HTTP/1.1" 200 2881
+INFO 2024-04-21 18:37:58,911 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=SQLPanel HTTP/1.1" 200 428
+INFO 2024-04-21 18:39:35,333 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=StaticFilesPanel HTTP/1.1" 200 30871
+INFO 2024-04-21 18:39:39,671 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e3d2b39b8ddd476b86ee7b9493426cd9&panel_id=TemplatesPanel HTTP/1.1" 200 27080
+ERROR 2024-04-21 18:40:42,715 log 2348 24856 Internal Server Error: /__debug__/template_source/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\debug_toolbar\decorators.py", line 18, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\debug_toolbar\decorators.py", line 30, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\debug_toolbar\panels\templates\views.py", line 43, in template_source
+    source = loader.get_contents(origin)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: '<unknown source>'
+ERROR 2024-04-21 18:40:42,717 basehttp 2348 24856 "GET /__debug__/template_source/?template=None&template_origin=Ijx1bmtub3duIHNvdXJjZT4i:1rySe8:dO80tCrxXxXlZIXRFVXY0sU4EbiqSl3O5HA194MnAoU HTTP/1.1" 500 82239
+INFO 2024-04-21 18:40:47,718 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e0179d71dd1c4658aeaf7cd82c286cef&panel_id=TemplatesPanel HTTP/1.1" 200 31706
+INFO 2024-04-21 18:41:08,229 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e0179d71dd1c4658aeaf7cd82c286cef&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO 2024-04-21 18:41:18,481 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=e0179d71dd1c4658aeaf7cd82c286cef&panel_id=SignalsPanel HTTP/1.1" 200 2276
+WARNING 2024-04-21 18:42:58,573 log 2348 24856 Not Found: /
+WARNING 2024-04-21 18:42:58,574 basehttp 2348 24856 "GET / HTTP/1.1" 404 12610
+INFO 2024-04-21 18:42:58,586 basehttp 2348 24856 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-21 18:42:58,587 basehttp 2348 5632 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-21 18:42:58,591 basehttp 2348 5632 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-21 18:42:58,595 basehttp 2348 5632 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2024-04-21 18:43:07,440 log 2348 5632 Not Found: /HW6
+WARNING 2024-04-21 18:43:07,441 basehttp 2348 5632 "GET /HW6 HTTP/1.1" 404 12640
+WARNING 2024-04-21 18:43:13,631 log 2348 5632 Not Found: /HW6/admin
+WARNING 2024-04-21 18:43:13,631 basehttp 2348 5632 "GET /HW6/admin HTTP/1.1" 404 12915
+INFO 2024-04-21 18:43:15,584 basehttp 2348 5632 "GET /__debug__/render_panel/?store_id=0676c54265f546fb9586ed1faa116dce&panel_id=ProfilingPanel HTTP/1.1" 200 40952
+WARNING 2024-04-21 18:44:31,951 log 2348 5632 Not Found: /HW6/
+WARNING 2024-04-21 18:44:31,951 basehttp 2348 5632 "GET /HW6/ HTTP/1.1" 404 12895
+INFO 2024-04-21 18:44:41,055 basehttp 2348 5632 "GET /HW6/update HTTP/1.1" 200 10866
+INFO 2024-04-21 18:44:41,077 basehttp 2348 24856 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+INFO 2024-04-21 18:44:46,120 basehttp 2348 24856 "GET /HW6/update/ HTTP/1.1" 200 11815
+INFO 2024-04-21 18:44:50,541 basehttp 2348 24856 "GET /__debug__/render_panel/?store_id=606ac599f48a4dd889ea6759949103fb&panel_id=ProfilingPanel HTTP/1.1" 200 33836
+INFO 2024-04-21 21:37:44,224 autoreload 6816 16312 Watching for file changes with StatReloader
+WARNING 2024-04-21 21:38:04,853 log 6816 6656 Not Found: /HW6/
+WARNING 2024-04-21 21:38:04,853 basehttp 6816 6656 "GET /HW6/ HTTP/1.1" 404 13407
+INFO 2024-04-21 21:38:04,871 basehttp 6816 6656 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-21 21:38:04,873 basehttp 6816 21900 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-21 21:38:04,873 basehttp 6816 6656 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-21 21:38:04,883 basehttp 6816 6656 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-21 21:38:07,471 basehttp 6816 6656 "GET /HW6/db HTTP/1.1" 200 10854
+INFO 2024-04-21 21:38:07,496 basehttp 6816 21900 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+INFO 2024-04-21 21:38:09,765 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 21:39:05,610 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:39:37,437 basehttp 6816 21900 "GET /HW6/view/ HTTP/1.1" 200 10627
+INFO 2024-04-21 21:39:49,278 basehttp 6816 21900 "GET /HW6/template/ HTTP/1.1" 200 10635
+WARNING 2024-04-21 21:43:06,727 log 6816 21900 Not Found: /HW6/da/
+WARNING 2024-04-21 21:43:06,728 basehttp 6816 21900 "GET /HW6/da/ HTTP/1.1" 404 13418
+INFO 2024-04-21 21:43:12,593 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:43:45,203 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:45:10,971 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:46:43,159 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:46:48,012 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:47:00,500 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:47:12,309 basehttp 6816 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:47:17,581 basehttp 6816 21900 "GET /HW6/db HTTP/1.1" 200 10854
+INFO 2024-04-21 21:47:19,424 basehttp 6816 22336 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:48:07,057 basehttp 6816 22336 "GET /__debug__/render_panel/?store_id=fcb0227fb55444c4949e215873d4ee2b&panel_id=ProfilingPanel HTTP/1.1" 200 46085
+INFO 2024-04-21 21:49:00,086 basehttp 6816 22336 "GET /__debug__/render_panel/?store_id=fcb0227fb55444c4949e215873d4ee2b&panel_id=SignalsPanel HTTP/1.1" 200 2276
+INFO 2024-04-21 21:49:02,001 basehttp 6816 22336 "GET /__debug__/render_panel/?store_id=fcb0227fb55444c4949e215873d4ee2b&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO 2024-04-21 21:49:02,980 basehttp 6816 22336 "GET /__debug__/render_panel/?store_id=fcb0227fb55444c4949e215873d4ee2b&panel_id=TemplatesPanel HTTP/1.1" 200 7058
+INFO 2024-04-21 21:50:43,597 basehttp 6816 22336 "GET /__debug__/render_panel/?store_id=fcb0227fb55444c4949e215873d4ee2b&panel_id=StaticFilesPanel HTTP/1.1" 200 30871
+INFO 2024-04-21 21:50:45,728 basehttp 6816 22336 "GET /__debug__/render_panel/?store_id=fcb0227fb55444c4949e215873d4ee2b&panel_id=SQLPanel HTTP/1.1" 200 5304
+INFO 2024-04-21 21:53:27,299 autoreload 6816 16312 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 21:53:27,818 autoreload 8816 24652 Watching for file changes with StatReloader
+ERROR 2024-04-21 21:53:31,842 log 8816 17972 Internal Server Error: /HW6/db/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\query.py", line 599, in aggregate
+    arg.default_alias
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\aggregates.py", line 110, in default_alias
+    raise TypeError("Complex expressions require an alias")
+TypeError: Complex expressions require an alias
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework6app\views.py", line 66, in total_in_db
+    total = Product.objects.aggregate(Sum(Product.value))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\db\models\query.py", line 601, in aggregate
+    raise TypeError("Complex aggregates require an alias")
+TypeError: Complex aggregates require an alias
+ERROR 2024-04-21 21:53:31,889 basehttp 8816 17972 "GET /HW6/db/ HTTP/1.1" 500 95413
+INFO 2024-04-21 21:53:55,868 autoreload 8816 24652 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 21:53:56,360 autoreload 20340 5292 Watching for file changes with StatReloader
+INFO 2024-04-21 21:53:58,381 basehttp 20340 21900 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 21:54:21,258 basehttp 20340 21900 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:54:21,345 autoreload 20340 5292 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 21:54:21,818 autoreload 12744 4024 Watching for file changes with StatReloader
+INFO 2024-04-21 21:54:23,372 basehttp 12744 9444 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 21:54:37,407 basehttp 12744 9444 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:54:37,578 autoreload 12744 4024 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 21:54:38,062 autoreload 10668 16492 Watching for file changes with StatReloader
+ERROR 2024-04-21 21:54:39,560 log 10668 14624 Internal Server Error: /HW6/db/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework6app\views.py", line 66, in total_in_db
+    total = Product.objects.aggregate(sum('value'))
+                                      ^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2024-04-21 21:54:39,605 basehttp 10668 14624 "GET /HW6/db/ HTTP/1.1" 500 78058
+ERROR 2024-04-21 21:54:40,784 log 10668 14624 Internal Server Error: /HW6/db/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework6app\views.py", line 66, in total_in_db
+    total = Product.objects.aggregate(sum('value'))
+                                      ^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2024-04-21 21:54:40,812 basehttp 10668 14624 "GET /HW6/db/ HTTP/1.1" 500 78057
+ERROR 2024-04-21 21:54:41,938 log 10668 14624 Internal Server Error: /HW6/db/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework6app\views.py", line 66, in total_in_db
+    total = Product.objects.aggregate(sum('value'))
+                                      ^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2024-04-21 21:54:41,963 basehttp 10668 14624 "GET /HW6/db/ HTTP/1.1" 500 78057
+ERROR 2024-04-21 21:54:44,003 log 10668 14624 Internal Server Error: /HW6/db/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework6app\views.py", line 66, in total_in_db
+    total = Product.objects.aggregate(sum('value'))
+                                      ^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2024-04-21 21:54:44,028 basehttp 10668 14624 "GET /HW6/db/ HTTP/1.1" 500 78057
+INFO 2024-04-21 21:55:09,502 autoreload 10668 16492 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 21:55:10,010 autoreload 11136 25100 Watching for file changes with StatReloader
+INFO 2024-04-21 21:55:10,455 basehttp 11136 21568 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 21:55:11,681 basehttp 11136 21568 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 21:56:08,340 basehttp 11136 21568 "GET /__debug__/render_panel/?store_id=c330d1aab5fd4bf2b505a91a07a8389d&panel_id=SQLPanel HTTP/1.1" 200 5304
+INFO 2024-04-21 21:57:08,134 autoreload 11136 25100 E:\Python\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2024-04-21 21:57:08,637 autoreload 9808 17596 Watching for file changes with StatReloader
+INFO 2024-04-21 21:58:06,140 autoreload 1636 5780 Watching for file changes with StatReloader
+INFO 2024-04-21 21:58:20,773 autoreload 1636 5780 E:\Python\Django\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-21 21:58:21,278 autoreload 11716 13228 Watching for file changes with StatReloader
+INFO 2024-04-21 21:58:25,482 basehttp 11716 23764 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 21:58:25,577 basehttp 11716 22536 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-21 21:58:25,577 basehttp 11716 23764 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-21 21:58:25,577 basehttp 11716 8980 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-21 21:58:25,587 basehttp 11716 8980 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-21 21:58:48,004 basehttp 11716 8980 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 22:02:25,773 autoreload 11716 13228 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:02:26,286 autoreload 25100 18400 Watching for file changes with StatReloader
+INFO 2024-04-21 22:04:43,030 autoreload 25100 18400 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:04:43,557 autoreload 13948 15988 Watching for file changes with StatReloader
+INFO 2024-04-21 22:05:24,122 basehttp 13948 2972 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 22:05:31,460 basehttp 13948 2972 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 22:06:21,403 autoreload 13948 15988 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:06:21,901 autoreload 22928 21772 Watching for file changes with StatReloader
+INFO 2024-04-21 22:06:22,242 basehttp 22928 20856 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 22:06:23,613 basehttp 22928 20856 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 22:06:28,464 autoreload 22928 21772 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:06:28,951 autoreload 25524 1652 Watching for file changes with StatReloader
+INFO 2024-04-21 22:06:29,295 basehttp 25524 22408 "GET /HW6/db/ HTTP/1.1" 200 10665
+INFO 2024-04-21 22:06:30,164 basehttp 25524 22408 "GET /HW6/db/ HTTP/1.1" 200 10664
+INFO 2024-04-21 22:07:32,768 basehttp 25524 22408 "GET /HW6/view/ HTTP/1.1" 200 10627
+INFO 2024-04-21 22:07:40,611 basehttp 25524 22408 "GET /HW6/template/ HTTP/1.1" 200 10636
+INFO 2024-04-21 22:08:38,803 basehttp 25524 22408 "GET /HW6/template/ HTTP/1.1" 200 10636
+INFO 2024-04-21 22:08:40,279 basehttp 25524 22408 "GET /HW6/template/ HTTP/1.1" 200 10636
+INFO 2024-04-21 22:08:43,871 basehttp 25524 22408 "GET /HW6/db/ HTTP/1.1" 200 10664
+WARNING 2024-04-21 22:08:49,167 log 25524 22408 Not Found: /HW6/viev/
+WARNING 2024-04-21 22:08:49,168 basehttp 25524 22408 "GET /HW6/viev/ HTTP/1.1" 404 13738
+INFO 2024-04-21 22:08:55,796 basehttp 25524 22408 "GET /HW6/view/ HTTP/1.1" 200 10627
+INFO 2024-04-21 22:09:32,267 basehttp 25524 22408 "GET /HW6/view/ HTTP/1.1" 200 10633
+INFO 2024-04-21 22:09:35,878 basehttp 25524 22408 "GET /HW6/db/ HTTP/1.1" 200 10699
+INFO 2024-04-21 22:10:04,343 basehttp 25524 22408 "GET /HW6/view/ HTTP/1.1" 200 10633
+INFO 2024-04-21 22:10:09,644 basehttp 25524 22408 "GET /HW6/template/ HTTP/1.1" 200 10641
+WARNING 2024-04-21 22:10:41,298 log 25524 22408 Not Found: /HW6/
+WARNING 2024-04-21 22:10:41,298 basehttp 25524 22408 "GET /HW6/ HTTP/1.1" 404 13718
+INFO 2024-04-21 22:10:44,989 basehttp 25524 22408 "GET /HW6/db HTTP/1.1" 200 10854
+INFO 2024-04-21 22:10:45,012 basehttp 25524 16832 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 304 0
+INFO 2024-04-21 22:10:49,001 basehttp 25524 16832 "GET /HW6/db/ HTTP/1.1" 200 10704
+INFO 2024-04-21 22:10:54,911 basehttp 25524 16832 "GET /HW6/view/ HTTP/1.1" 200 10638
+INFO 2024-04-21 22:10:59,685 basehttp 25524 16832 "GET /HW6/template/ HTTP/1.1" 200 10646
+INFO 2024-04-21 22:11:16,026 basehttp 25524 16832 "GET /HW6/db/ HTTP/1.1" 200 10640
+INFO 2024-04-21 22:11:25,837 basehttp 25524 16832 "GET /HW6/view/ HTTP/1.1" 200 10615
+INFO 2024-04-21 22:12:11,857 basehttp 25524 16832 "GET /HW6/view/ HTTP/1.1" 200 10615
+INFO 2024-04-21 22:12:16,684 basehttp 25524 16832 "GET /HW6/template/ HTTP/1.1" 200 10612
+ERROR 2024-04-21 22:12:50,113 log 25524 16832 Internal Server Error: /HW6/db/
+Traceback (most recent call last):
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\myproject\Homework6app\views.py", line 70, in total_in_db
+    return render(request, 'Homework6app/total_count.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\Django\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% total %' from '% total %'
+ERROR 2024-04-21 22:12:50,163 basehttp 25524 16832 "GET /HW6/db/ HTTP/1.1" 500 200223
+INFO 2024-04-21 22:13:07,929 basehttp 25524 16832 "GET /HW6/db/ HTTP/1.1" 200 10640
+INFO 2024-04-21 22:13:12,584 basehttp 25524 16832 "GET /__debug__/render_panel/?store_id=f6cf0e5ca83b4f749e1c87282244a995&panel_id=HistoryPanel HTTP/1.1" 200 40303
+INFO 2024-04-21 22:13:12,600 basehttp 25524 16832 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-04-21 22:13:20,268 basehttp 25524 16832 "GET /__debug__/render_panel/?store_id=f6cf0e5ca83b4f749e1c87282244a995&panel_id=SettingsPanel HTTP/1.1" 200 26723
+INFO 2024-04-21 22:13:23,805 basehttp 25524 16832 "GET /__debug__/render_panel/?store_id=f6cf0e5ca83b4f749e1c87282244a995&panel_id=HeadersPanel HTTP/1.1" 200 5303
+INFO 2024-04-21 22:13:34,292 basehttp 25524 16832 "GET /__debug__/render_panel/?store_id=f6cf0e5ca83b4f749e1c87282244a995&panel_id=RequestPanel HTTP/1.1" 200 3128
+INFO 2024-04-21 22:13:55,769 basehttp 25524 16832 "GET /__debug__/render_panel/?store_id=f6cf0e5ca83b4f749e1c87282244a995&panel_id=SQLPanel HTTP/1.1" 200 5304
+INFO 2024-04-21 22:18:38,477 autoreload 25524 1652 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:18:38,986 autoreload 17288 5436 Watching for file changes with StatReloader
+INFO 2024-04-21 22:19:11,000 autoreload 17288 5436 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:19:11,482 autoreload 23900 8804 Watching for file changes with StatReloader
+INFO 2024-04-21 22:19:14,475 basehttp 23900 23716 "GET /HW6/db/ HTTP/1.1" 200 10641
+INFO 2024-04-21 22:19:26,263 autoreload 23900 8804 E:\Python\Django\myproject\Homework6app\views.py changed, reloading.
+INFO 2024-04-21 22:19:26,752 autoreload 7520 24492 Watching for file changes with StatReloader
+INFO 2024-04-21 22:19:29,805 basehttp 7520 19396 "GET /HW6/db/ HTTP/1.1" 200 10641
+INFO 2024-04-21 22:20:26,392 basehttp 7520 19396 "GET /__debug__/render_panel/?store_id=72cd0f7bc7f342e1b144621b08223f80&panel_id=SQLPanel HTTP/1.1" 200 5304
+INFO 2024-04-21 22:20:47,643 basehttp 7520 19396 "GET /HW6/view/ HTTP/1.1" 200 10615
+INFO 2024-04-21 22:20:47,664 basehttp 7520 19396 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-21 22:20:47,667 basehttp 7520 19396 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-21 22:20:47,668 basehttp 7520 20440 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-21 22:20:47,675 basehttp 7520 20440 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-21 22:20:50,124 basehttp 7520 20440 "GET /__debug__/render_panel/?store_id=b8678734bab94a2181d80a93ac8798cd&panel_id=SQLPanel HTTP/1.1" 200 6837
+INFO 2024-04-21 22:21:39,995 basehttp 7520 20440 "GET /__debug__/render_panel/?store_id=b8678734bab94a2181d80a93ac8798cd&panel_id=ProfilingPanel HTTP/1.1" 200 46011
+INFO 2024-04-21 22:25:20,482 basehttp 7520 20440 "GET /HW6/db/ HTTP/1.1" 200 10671
+INFO 2024-04-21 22:25:58,502 basehttp 7520 20440 "GET /HW6/template/ HTTP/1.1" 200 10643
+INFO 2024-04-21 22:26:00,300 basehttp 7520 20440 "GET /__debug__/render_panel/?store_id=c8f03fe87601442598a3144f1a6e16e8&panel_id=SQLPanel HTTP/1.1" 200 428
+INFO 2024-04-21 22:26:16,626 basehttp 7520 20440 "GET /HW6/template HTTP/1.1" 200 10872
+INFO 2024-04-21 22:26:17,531 basehttp 7520 17792 "GET /HW6/template/ HTTP/1.1" 200 10642
+INFO 2024-04-21 22:26:19,557 basehttp 7520 17792 "GET /__debug__/render_panel/?store_id=192a3a71b93645018318b204299ecc02&panel_id=SQLPanel HTTP/1.1" 200 428
+INFO 2024-04-21 22:29:46,749 basehttp 7520 17792 "GET /__debug__/render_panel/?store_id=192a3a71b93645018318b204299ecc02&panel_id=TemplatesPanel HTTP/1.1" 200 7090
+INFO 2024-04-21 22:30:33,766 basehttp 7520 17792 "GET /admin HTTP/1.1" 200 10851
+INFO 2024-04-21 22:30:36,019 basehttp 7520 13664 "GET /admin/ HTTP/1.1" 200 24285
+INFO 2024-04-21 22:30:36,045 basehttp 7520 13664 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-04-21 22:30:36,046 basehttp 7520 19232 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-04-21 22:30:36,049 basehttp 7520 22456 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-04-21 22:30:36,050 basehttp 7520 25352 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-04-21 22:30:36,051 basehttp 7520 12812 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-04-21 22:30:36,055 basehttp 7520 5976 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-04-21 22:30:36,059 basehttp 7520 13664 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-04-21 22:30:36,063 basehttp 7520 5976 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-04-21 22:30:36,063 basehttp 7520 25352 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-04-21 22:30:43,322 basehttp 7520 25352 "GET /admin/Homework5app/category/ HTTP/1.1" 200 23312
+INFO 2024-04-21 22:30:43,335 basehttp 7520 25352 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-04-21 22:30:43,351 basehttp 7520 13664 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-04-21 22:30:43,355 basehttp 7520 19232 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-04-21 22:30:43,355 basehttp 7520 12812 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-04-21 22:30:43,358 basehttp 7520 22456 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-04-21 22:30:43,379 basehttp 7520 13664 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-04-21 22:30:43,380 basehttp 7520 19232 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-04-21 22:30:43,391 basehttp 7520 25352 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-21 22:30:43,392 basehttp 7520 5976 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-04-21 22:30:43,396 basehttp 7520 25352 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-04-21 22:30:43,436 basehttp 7520 12812 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-04-21 22:30:43,465 basehttp 7520 12812 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-04-21 22:30:47,042 basehttp 7520 12812 "GET /admin/Homework5app/product/ HTTP/1.1" 200 32537
+INFO 2024-04-21 22:30:47,072 basehttp 7520 25352 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-04-21 22:30:47,082 basehttp 7520 12812 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-21 22:30:47,110 basehttp 7520 25352 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-04-21 22:30:47,110 basehttp 7520 12812 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-04-21 22:30:58,865 basehttp 7520 12812 "GET /__debug__/render_panel/?store_id=3876deea738e4b9b9f4b1ffd281cfd7a&panel_id=SQLPanel HTTP/1.1" 200 131499
+INFO 2024-04-21 22:31:20,041 basehttp 7520 12812 "GET /admin/Homework6app/product/ HTTP/1.1" 200 22142
+INFO 2024-04-21 22:31:20,078 basehttp 7520 12812 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-21 22:31:24,483 basehttp 7520 12812 "GET /__debug__/render_panel/?store_id=80a3f9ebc6b94de6886a2f76b5badc82&panel_id=SQLPanel HTTP/1.1" 200 131507
+WARNING 2024-04-21 22:31:30,864 log 7520 12812 Not Found: /admin/Homework6app/db/
+WARNING 2024-04-21 22:31:30,865 basehttp 7520 12812 "GET /admin/Homework6app/db/ HTTP/1.1" 404 16003
+WARNING 2024-04-21 22:31:48,505 log 7520 12812 Not Found: /admin/HW6
+WARNING 2024-04-21 22:31:48,506 basehttp 7520 12812 "GET /admin/HW6 HTTP/1.1" 404 15951
+WARNING 2024-04-21 22:31:52,984 log 7520 12812 Not Found: /admin/HW6/db/
+WARNING 2024-04-21 22:31:52,985 basehttp 7520 12812 "GET /admin/HW6/db/ HTTP/1.1" 404 15967
+INFO 2024-04-21 22:31:57,424 basehttp 7520 12812 "GET /admin HTTP/1.1" 200 10851
+WARNING 2024-04-21 22:31:58,671 log 7520 25352 Not Found: /
+WARNING 2024-04-21 22:31:58,671 basehttp 7520 25352 "GET / HTTP/1.1" 404 12922
+WARNING 2024-04-21 22:32:08,255 log 7520 25352 Not Found: /HW6
+WARNING 2024-04-21 22:32:08,256 basehttp 7520 25352 "GET /HW6 HTTP/1.1" 404 12952
+INFO 2024-04-21 22:32:12,528 basehttp 7520 25352 "GET /HW6/db/ HTTP/1.1" 200 10671
+WARNING 2024-04-21 22:32:17,263 log 7520 25352 Not Found: /HW6/
+WARNING 2024-04-21 22:32:17,264 basehttp 7520 25352 "GET /HW6/ HTTP/1.1" 404 13718
+INFO 2024-04-21 22:32:39,824 basehttp 7520 25352 "GET /HW6/user HTTP/1.1" 200 10860
+INFO 2024-04-21 22:32:41,764 basehttp 7520 5976 "GET /HW6/user/ HTTP/1.1" 200 10827
+INFO 2024-04-21 22:32:46,283 basehttp 7520 5976 "GET /HW6/db/ HTTP/1.1" 200 10671
+WARNING 2024-04-21 22:32:51,530 log 7520 5976 Not Found: /HW6/bd/
+WARNING 2024-04-21 22:32:51,530 basehttp 7520 5976 "GET /HW6/bd/ HTTP/1.1" 404 13730
+INFO 2024-04-21 22:35:41,465 basehttp 7520 5976 "GET /HW6/db/ HTTP/1.1" 200 10671

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Choose game{% endblock %}
+
+{% block content %}
+<h1>Список заказанных клиентом {{ client }} товаров за период {{ period }} дней:</h1>
+
+{% for item in list_of_products %}
+    <li> {{ item }} </li>
+{% endfor %}
+
+
+{% endblock %}
