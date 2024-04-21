@@ -50,11 +50,11 @@ INSTALLED_APPS = [
     # 'myapp',
     # 'Homework1app',
     # 'Homework2app',
-    'Homework3app',
-    'Homework4app',
-    'Homework5app',
+    # 'Homework3app',
+    # 'Homework4app',
+    # 'Homework5app',
     'Homework6app',
-    'debug_toolbar',
+    # 'debug_toolbar',
 ]
 
 MIDDLEWARE = [
