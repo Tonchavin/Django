@@ -8,6 +8,7 @@ out
 gen
 /media/
 /static/
+/log/
 *.sqlite3
 *.log
 *.рус
